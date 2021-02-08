@@ -3,24 +3,60 @@
 <head>
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="project1.css">
     <title>Sign up</title>
 </head>
 <body>
 
-    <img src="InsertPathHere" alt="UserPic">
-    <input type="text" placeholder="First name">
-    <input type="text" placeholder="Last name">
-    <input type="text" placeholder="Date of birth">
-    <input type="text" placeholder="Username">
-    <input type="email" placeholder="E-mail">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Confirm password">
-    <input type="text" placeholder="Address">
-    <input type="text" placeholder="City">
-    <input type="text" placeholder="State">
-    <input type="text" placeholder="Zip code">
-    <input type="tel" placeholder="Phone number">
+    <section id="pictureSection">
+        <h1>Register New Account</h1>
+        <img src="InsertPathHere" alt="UserPic">
+    
+        <form action="/action_page.php">
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+        </form>
+    </section>
+
+    <label for="firstName">First name:</label>
+    <input type="text" id="firstName">
+
+    <label for="lastName">Last name:</label>
+    <input type="text" id="lastName">
+
+    <label for="dob">Date of Birth:</label>
+    <input type="text" placeholder="mm/dd/yyyy" id="dob"> 
+
+    <label for="username">Username:</label>
+    <input type="text" id="username">
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password">
+
+    <label for="confirmPassword">Confirm password:</label>
+    <input type="password" id="confirmPassword">
+
+    <label for="address">Address:</label>
+    <input type="text" id="address">
+
+    <label for="city">City:</label>
+    <input type="text" id="city">
+
+    <label for="state">State:</label>
+    <input type="text" id="state">
+
+    <label for="zipCode">Zip code:</label>
+    <input type="text" id="zipCode">
+
+    <label for="phoneNumber">Phone number:</label>
+    <input type="tel" id="phoneNumber">
+
+
     <button class="btn btn-primary">Submit</button>
+
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
