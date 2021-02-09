@@ -15,7 +15,11 @@
 
         <form action="/action_page.php">
             <label for="img">Select image:</label>
-            <input type="file" id="img" name="img" accept="image/*">
+            <!-- <input type="file" id="img" name="img" accept="image/*"> -->
+            <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+            <div class ="preview">
+                 <img id ="file-ip-1-preview">
+            </div>
         </form>
     </div>
     
