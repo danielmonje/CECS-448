@@ -30,8 +30,9 @@ body {
     border-radius: 100px;
     margin-bottom: 10px;
     justify-content: center;
+    position: relative;
 }
 #userPic a{
     position: absolute;
-    
+    top: 85px;
 }
