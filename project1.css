@@ -16,6 +16,15 @@ body {
 .d-flex {
     margin: 0 auto;
 }
+.input-block {
+    margin: 13px 0;
+}
+input {
+    background-color: rgb(224, 235, 247);
+    border: 0px;
+    padding: 3px;
+    padding-left: 3px;
+}
 
 /* Register acount Header */
 #container h1{
@@ -35,4 +44,7 @@ body {
 #userPic a{
     position: absolute;
     top: 85px;
+}
+.flex-single-input input{
+    width: 418px;
 }
