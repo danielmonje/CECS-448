@@ -6,3 +6,12 @@ function showPreview(event) {
         preview.style.display = "block";
     }
 }
+$(document).ready(function(){
+    $('#userPic a').click(function(){
+        $('#upload-form').show();
+    });
+
+    $('#upload-form a').click(function(){
+        $('#upload-form').hide();
+    });
+});

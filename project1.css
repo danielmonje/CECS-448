@@ -25,12 +25,17 @@ input {
     padding: 3px;
     padding-left: 3px;
 }
+.flex-single-input input{
+    width: 418px;
+}
 
 /* Register acount Header */
 #container h1{
     text-align: center;
 }
-
+#upload {
+    position: relative;
+}
 /* User Image circle portrait*/
 #userPic {
     border: 1px solid black;
@@ -45,6 +50,24 @@ input {
     position: absolute;
     top: 85px;
 }
-.flex-single-input input{
-    width: 418px;
+#upload-form {
+    position: absolute;
+    display: none;
+    left: -220px;
+    box-shadow: 0px 1px 40px 0px rgb(236, 236, 236);
+}
+.card {
+    height: 400px;
+    width: 600px;
+}
+.card-header {
+    text-align: center;
+    font-weight:bold;
+    font-size: 1.2em;
+}
+.card-body{
+    padding-top: 80px;
+}
+.card-body a{
+    margin-top: 60px;
 }
