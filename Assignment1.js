@@ -7,6 +7,10 @@ function showPreview(event) {
     }
 }
 $(document).ready(function(){
+
+    toggleSubmit(hasEmptyFields());
+    addListenersToTextBoxes();
+
     $('#userPic a').click(function(){
         $('#upload-form').show();
     });
@@ -16,13 +20,66 @@ $(document).ready(function(){
     });
 });
 
-function validateForm()
+function toggleSubmit(hasEmpty)
 {
-    var firstName = document.getElementById("firstName").value;
     var button = document.getElementById("submitButton");
-    
-    if(firstName == null)
+
+    if(hasEmpty)
     {
         button.disabled = true;
     }
+    else
+    {
+        button.disabled = false;
+    }
 }
+
+function hasEmptyFields()
+{
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var dob = document.getElementById("dob").value;
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    var address = document.getElementById("address").value;
+    var city = document.getElementById("city").value;
+    var state = document.getElementById("state").value;
+    var zipCode = document.getElementById("zipCode").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
+    
+    if(firstName == "" || lastName == "" || dob == "" || username == "" ||
+    email == "" || password == "" || confirmPassword == "" || address == "" ||
+    city == "" || state == "" || zipCode == "" || phoneNumber == "") 
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+
+function addListenersToTextBoxes()
+{
+    $(':text').each(function() 
+    {
+        $(this).bind('keyup', function()
+        {
+            toggleSubmit(hasEmptyFields());
+        });
+    });
+
+    $(':password').each(function() 
+    {
+        $(this).bind('keyup', function()
+        {
+            toggleSubmit(hasEmptyFields());
+        });
+    });
+}
+
+
