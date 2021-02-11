@@ -15,3 +15,14 @@ $(document).ready(function(){
         $('#upload-form').hide();
     });
 });
+
+function validateForm()
+{
+    var firstName = document.getElementById("firstName").value;
+    var button = document.getElementById("submitButton");
+    
+    if(firstName == null)
+    {
+        button.disabled = true;
+    }
+}
