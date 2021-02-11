@@ -12,6 +12,8 @@ $(document).ready(function(){
     });
 
     $('#upload-form a').click(function(){
-        $('#upload-form').hide();
+        setTimeout(function(){ 
+            $('#upload-form').hide();
+        }, 2000);
     });
 });
