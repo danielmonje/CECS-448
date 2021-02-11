@@ -33,9 +33,7 @@ input {
 #container h1{
     text-align: center;
 }
-#upload {
-    position: relative;
-}
+
 /* User Image circle portrait*/
 #userPic {
     border: 1px solid black;
@@ -50,9 +48,14 @@ input {
     position: absolute;
     top: 85px;
 }
+
+/* Upload form */
+#upload {
+    position: relative;
+}
 #upload-form {
     position: absolute;
-    display: none;
+    display: block;
     left: -220px;
     box-shadow: 0px 1px 40px 0px rgb(236, 236, 236);
 }
@@ -68,6 +71,6 @@ input {
 .card-body{
     padding-top: 80px;
 }
-.card-body a{
-    margin-top: 60px;
+.card-body input{
+    margin-top: 0 60px 10px 0;
 }
