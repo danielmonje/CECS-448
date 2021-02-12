@@ -87,7 +87,7 @@ function submitValidateFields()
     var email = document.getElementById("email").value;
     var phoneNumber = document.getElementById("phoneNumber").value;
     var hasErrors = false;
-    var message = "Errors:\n";
+    var message = "Error:\n";
     var button = document.getElementById("submitButton");
 
     if(!validateEmail(email))
