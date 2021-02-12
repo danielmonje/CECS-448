@@ -24,7 +24,7 @@ function toggleSubmit(hasEmpty)
 {
     var button = document.getElementById("submitButton");
 
-    if(hasEmpty)
+    if(hasEmpty || button.textContent != "Submit")
     {
         button.disabled = true;
     }
@@ -61,8 +61,6 @@ function hasEmptyFields()
     }
 }
 
-
-
 function addListenersToTextBoxes()
 {
     $(':text').each(function() 
@@ -82,4 +80,59 @@ function addListenersToTextBoxes()
     });
 }
 
+function submitValidateFields()
+{
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    var email = document.getElementById("email").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
+    var hasErrors = false;
+    var message = "Errors:\n";
+    var button = document.getElementById("submitButton");
 
+    if(!validateEmail(email))
+    {
+        message += "Invalid E-Mail.\n";
+        hasErrors = true;
+    }
+
+    if(!(password == confirmPassword))
+    {
+        message += "Passwords do not match.\n"
+        hasErrors = true;
+    }
+
+    if(!validatePhone(phoneNumber))
+    {
+        message += "Invalid phone number.\n";
+        hasErrors = true;
+    }
+
+    if(hasErrors)
+    {
+        alert(message);
+    }
+    else
+    {
+        button.textContent = "Submitted!";
+        button.disabled = true;
+    }
+
+}
+
+function validateEmail(email) 
+{
+ if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email.toLowerCase()))
+  {
+    return true;
+  }
+    return false;
+}
+function validatePhone(phone) 
+{
+ if (/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(phone))
+  {
+    return true;
+  }
+    return false;
+}
