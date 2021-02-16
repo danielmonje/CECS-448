@@ -23,17 +23,20 @@ $(document).ready(function(){
         $('#upload-form').show();
     });
 
-    //"uploads" an image for 2 seconds before closing the upload form screen
+    //"uploads" an image via circle animation before closing the upload form screen
     $('#upload-form a').click(function(){
         var interval = setInterval(function() {
             if (i == time) {
-                clearIntercal(intercal);
+                clearInterval(interval);
                 upload_clicked = true;
                 return;
             }
             $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
             i++;
         }, 1000);
+        setTimeout(function() {
+            $('#upload-form').hide();
+        }, 3000);
     });
 
 });
