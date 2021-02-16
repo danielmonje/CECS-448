@@ -33,9 +33,6 @@ $(document).ready(function(){
             $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
             i++;
         }, 1000);
-        setTimeout(function() {
-            $('#upload-form').hide();
-        }, 3000);
     });
 
     $('#close-upload').click(function(){
