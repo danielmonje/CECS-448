@@ -6,14 +6,27 @@ function showPreview(event) {
         preview.style.display = "block";
     }
 }
+
 $(document).ready(function(){
     $('#userPic a').click(function(){
         $('#upload-form').show();
     });
 
     $('#upload-form a').click(function(){
+        $('#bar').show();
+        $('#progress-bar').show();
+        var progress = document.getElementById("progress-bar");
+        var newWidth = progress.style.width;
         setTimeout(function(){ 
-            $('#upload-form').hide();
+            //newWidth = "50%";
+            $('#bar').text("50%")
+        }, 1000);
+        setTimeout(function(){ 
+            $('#bar').text("100%")
+            // newWidth = "100%";
         }, 2000);
+        // $('#upload-form').hide();
+        // $('#bar').hide();
+        // $('#progress-bar').hide();
     });
 });
