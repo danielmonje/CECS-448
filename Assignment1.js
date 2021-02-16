@@ -22,7 +22,7 @@ $(document).ready(function(){
         $('#upload-form').show();
     });
 
-    //"uploads" an image for 2 seconds before closing the upload form screen
+    //"uploads" an image via circle animation before closing the upload form screen
     $('#upload-form a').click(function(){
         var interval = setInterval(function() {
             if (i == time) {
@@ -38,7 +38,6 @@ $(document).ready(function(){
     $('#close-upload').click(function(){
         $('#upload-form').hide();
         $('.circle-animation').css('stroke-dashoffset', offset);
-    
     });
 });
 
