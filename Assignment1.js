@@ -28,6 +28,7 @@ $(document).ready(function(){
             if (i == time) {
                 clearInterval(interval);
                 upload_clicked = true;
+                i = 1;
                 return;
             }
             $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
@@ -37,6 +38,7 @@ $(document).ready(function(){
 
     $('#close-upload').click(function(){
         $('#upload-form').hide();
+        $('.circle-animation').css('stroke-dashoffset', offset);
     })
 });
 
