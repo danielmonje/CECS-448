@@ -1,3 +1,8 @@
+var time= 3
+var offset = '440';
+var i = 1
+var upload_clicked = false;
+
 function showPreview(event) {
     if(event.target.files.length > 0) {
         var src = URL.createObjectURL(event.target.files[0]);
@@ -15,22 +20,14 @@ $(document).ready(function(){
 
     //"uploads" an image for 2 seconds before closing the upload form screen
     $('#upload-form a').click(function(){
-        $('#bar').show();
-        $('#progress-bar').show();
-        //FIXME this is used to update width of the blue progression bar (bugged out)
-        var progress = document.getElementById("progress-bar");
-        var newWidth = progress.style.width;
-        setTimeout(function(){ 
-            newWidth = "50%";
-            $('#bar').text("50%")
-        }, 1000); //updates to 50% after 1 second
-        setTimeout(function(){ 
-            $('#bar').text("100%")
-            newWidth = "100%";
-        }, 2000); //updates to 100% after 2 seconds
-        //Hides the upload form menu after 2 seconds
-        // $('#upload-form').hide();
-        // $('#bar').hide();
-        // $('#progress-bar').hide();
+        var interval = setInterval(function() {
+            if (i == time) {
+                clearIntercal(intercal);
+                upload_clicked = true;
+                return;
+            }
+            $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
+            i++;
+        }, 1000);
     });
 });
