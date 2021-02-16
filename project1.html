@@ -32,6 +32,10 @@
                     </div>
                     <input type="file">
                     <a href="#" class="btn btn-primary">Upload</a>
+                    <!--Upload Progress Bar-->
+                    <div id="bar"> 0%
+                        <div id="progress-bar"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,12 +126,14 @@
     </div>
 
     <div class="d-flex flex-row">
+        <!-- Submit button -->
         <div class="p-2">
             <button class="btn btn-primary" id="submitButton" onclick="submitValidateFields();">Submit</button>
         </div>
     </div>
 
     <div class = "d-flex flex-row">
+        <!-- Hyperlink to a login if user has an account -->
         <a href="#"> Already have an account? Sign in here.</a>
     </div>
 </div>
