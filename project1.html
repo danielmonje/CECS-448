@@ -23,7 +23,13 @@
         <!------------------------Upload Form-------------------------------->
         <div id="upload-form">
             <div class="card d-flex">
-                <div class="card-header">Upload Profile Image</div>
+                <!------------Upload Card Header ----------------->
+                <div class="card-header d-flex flex-row">
+                    <div class="mr-auto">Upload Profile Image</div>
+                    <div >
+                        <button id="close-upload" class="btn btn-outline-primary ml-auto">x</button>
+                    </div>    
+                </div>
                 <div class="card-body d-flex flex-column">
                     <div class="loading-circle d-flex">
                         <svg id="up-arrow" xmlns="http://www.w3.org/2000/svg" width="136" height="136" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">

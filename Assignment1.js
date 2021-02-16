@@ -1,7 +1,6 @@
 var time= 3
 var offset = '440';
 var i = 1
-var upload_clicked = false;
 
 function showPreview(event) {
     if(event.target.files.length > 0) {
@@ -39,6 +38,9 @@ $(document).ready(function(){
         }, 3000);
     });
 
+    $('#close-upload').click(function(){
+        $('#upload-form').hide();
+    })
 });
 
 function toggleSubmit(hasEmpty)
