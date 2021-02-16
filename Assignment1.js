@@ -39,6 +39,7 @@ $(document).ready(function(){
         // $('#progress-bar').hide();
     });
 
+});
 
 function toggleSubmit(hasEmpty)
 {
