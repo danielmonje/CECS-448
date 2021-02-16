@@ -26,8 +26,8 @@ $(document).ready(function(){
     $('#upload-form a').click(function(){
         var interval = setInterval(function() {
             if (i == time) {
-                clearIntercal(intercal);
-                upload_clicked = true;
+                clearInterval(interval);
+                 i = 1;
                 return;
             }
             $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
@@ -37,7 +37,9 @@ $(document).ready(function(){
 
     $('#close-upload').click(function(){
         $('#upload-form').hide();
-    })
+        $('.circle-animation').css('stroke-dashoffset', offset);
+    
+    });
 });
 
 function toggleSubmit(hasEmpty)

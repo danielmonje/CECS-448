@@ -1,3 +1,4 @@
+/**************************** General CSS ************************/
 body {
     background-color: rgb(255, 253, 247);
     padding-top: 40px;
@@ -29,12 +30,12 @@ input {
     width: 418px;
 }
 
-/* Register acount Header */
+/******************* Register acount Header ***********************/
 #container h1{
     text-align: center;
 }
 
-/* User Image circle portrait*/
+/******************** User Image circle portrait ********************/
 #userPic {
     border: 1px solid black;
     height: 150px;
