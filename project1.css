@@ -109,6 +109,13 @@ input {
     transition: all 1s linear;
 }
 
+.button-animation
+{   
+    background-color: rgb(34, 184, 34) !important;
+    border-color: rgb(34, 184, 34) !important;
+    transition: all 1s linear;
+}
+
 .error {
 
     border: 1px solid red;

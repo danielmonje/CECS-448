@@ -175,6 +175,7 @@ function submitValidateFields()
     {
         button.textContent = "Submitted!";
         button.disabled = true;
+        button.classList.add("button-animation");
         errorMessage.hidden = true;
     }
     else
