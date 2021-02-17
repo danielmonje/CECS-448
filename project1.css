@@ -108,3 +108,8 @@ input {
     stroke-dashoffset: 440;
     transition: all 1s linear;
 }
+
+.error {
+
+    border: 1px solid red;
+}

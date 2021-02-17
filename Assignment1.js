@@ -103,37 +103,74 @@ function addListenersToTextBoxes()
 
 function submitValidateFields()
 {
+    var dob = document.getElementById("dob").value;
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirmPassword").value;
     var email = document.getElementById("email").value;
+    var zip = document.getElementById("zipCode").value;
     var phoneNumber = document.getElementById("phoneNumber").value;
     var hasErrors = false;
     var message = "Error:\n";
     var button = document.getElementById("submitButton");
 
+    if(!validateDOB(dob))
+    {
+        document.getElementById("dob").classList.add("error");
+        message += "Invalid DOB, must be mm/dd/year."
+        hasErrors = true;
+    }
+    else
+    {
+        document.getElementById("dob").classList.remove("error");
+    }
+
     if(!validateEmail(email))
     {
+        document.getElementById("email").classList.add("error");
         message += "Invalid E-Mail.\n";
         hasErrors = true;
+    }
+    else
+    {
+        document.getElementById("email").classList.remove("error");
     }
 
     if(!(password == confirmPassword))
     {
+        document.getElementById("password").classList.add("error");
+        document.getElementById("confirmPassword").classList.add("error");
         message += "Passwords do not match.\n"
         hasErrors = true;
+    }
+    else
+    {
+        document.getElementById("password").classList.remove("error");
+        document.getElementById("confirmPassword").classList.remove("error");
+    }
+
+    if(!validateZip(zip))
+    {
+        document.getElementById("zipCode").classList.add("error");
+        message += "Invalid zip code.\n";
+        hasErrors = true;
+    }
+    else
+    {
+        document.getElementById("zipCode").classList.remove("error");
     }
 
     if(!validatePhone(phoneNumber))
     {
+        document.getElementById("phoneNumber").classList.add("error");
         message += "Invalid phone number.\n";
         hasErrors = true;
     }
-
-    if(hasErrors)
-    {
-        alert(message);
-    }
     else
+    {
+        document.getElementById("phoneNumber").classList.remove("error");
+    }
+
+    if(!hasErrors)
     {
         button.textContent = "Submitted!";
         button.disabled = true;
@@ -158,3 +195,12 @@ function validatePhone(phone)
     return false;
 }
 
+function validateZip(zip) 
+{
+    return /^\d{5}(-\d{4})?$/.test(zip);
+}
+
+function validateDOB(dob)
+{
+    return /^\d{1,2}([/])\d{1,2}\1\d{4}$/.test(dob);
+}
