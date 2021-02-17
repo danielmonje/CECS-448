@@ -110,13 +110,14 @@ function submitValidateFields()
     var zip = document.getElementById("zipCode").value;
     var phoneNumber = document.getElementById("phoneNumber").value;
     var hasErrors = false;
-    var message = "Error:\n";
+    var message = "Error(s):\n";
     var button = document.getElementById("submitButton");
+    var errorMessage = document.getElementById("errorMessage");
 
     if(!validateDOB(dob))
     {
         document.getElementById("dob").classList.add("error");
-        message += "Invalid DOB, must be mm/dd/year."
+        message += "Invalid DOB, must be mm/dd/yyyy.\n";
         hasErrors = true;
     }
     else
@@ -174,6 +175,12 @@ function submitValidateFields()
     {
         button.textContent = "Submitted!";
         button.disabled = true;
+        errorMessage.hidden = true;
+    }
+    else
+    {
+        errorMessage.textContent = message;
+        errorMessage.hidden = false;
     }
 
 }
