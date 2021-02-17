@@ -117,3 +117,7 @@ input {
 
     color: red;
 }
+
+input, label {
+    display:block;
+}
