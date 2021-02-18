@@ -31,16 +31,17 @@ $(document).ready(function(){
         var file = this.files[0];
         var reader = new FileReader();
         reader.onloadend = function() {
-            //alert("file read");
-            //$('#userPic svg').hide();
-            //$('#userPic a').hide();
-            //$('#userPic').css('background-image', 'url("' + reader.result + '")');
             fileURL = reader.result;
+            $('#upload-error').css('color', 'white');
+            $('#up-arrow').html('<path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>');   
+            $('#up-arrow path').css('fill','#000000');
+            $('.circle-animation').show();
         }
         if(file){
             file_uploaded = true;
             reader.readAsDataURL(file);
         } else {
+
         }
     })
     //"uploads" an image via circle animation before closing the upload form screen
@@ -53,14 +54,21 @@ $(document).ready(function(){
                 if (i == time) {
                     clearInterval(interval);
                     i = 1;
+                    $('.circle-animation').hide();
+                    $('.circle-animation').css('stroke-dashoffset', offset);
+                    $('#up-arrow').html('<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>');   
+                    $('#up-arrow path').css('fill','#32d306');
+                    $('#upload-form').delay(1500).hide(0);
+                    $('#circle-svg').show();
                     return;
                 }
                 $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
                 i++;
             }, 1000);
-
         } else {
-            
+            $('#up-arrow').html('<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>');   
+            $('#up-arrow path').css('fill','#e52222');
+            $('#upload-error').css('color', 'red');
         }
     });
 
