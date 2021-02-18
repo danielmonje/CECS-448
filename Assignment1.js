@@ -217,10 +217,16 @@ function submitValidateFields()
 
     if(!hasErrors)
     {
-        button.textContent = "Submitted!";
-        button.disabled = true;
-        button.classList.add("button-animation");
         errorMessage.hidden = true;
+        button.textContent = "Submitting...";
+        button.disabled = true;
+        $(button).html('Submitting... <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>');
+        setTimeout(function() 
+        {
+            button.textContent = "Submitted!"
+            button.classList.add("button-animation");
+        }, 3000);
+        
     }
     else
     {
