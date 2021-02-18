@@ -37,6 +37,9 @@ input {
 
 /******************** User Image circle portrait ********************/
 #userPic {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
     border: 1px solid black;
     height: 150px;
     width: 150px;
@@ -45,9 +48,19 @@ input {
     justify-content: center;
     position: relative;
 }
+#userPic svg{
+    display: block;
+
+}
 #userPic a{
     position: absolute;
     top: 85px;
+}
+#test {
+    display: none;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
 }
 
 /*************************** Upload form ************************/
@@ -70,9 +83,7 @@ input {
     font-size: 1.2em;
     display: flex;
     flex-direction: row;
-}
-.card-header button {
-    margin-left: 350px;
+    width: 600px;
 }
 .card-body{
     padding-top: 60px;
@@ -128,3 +139,4 @@ input {
 input, label {
     display:block;
 }
+

@@ -1,6 +1,8 @@
 var time= 3
 var offset = '440';
-var i = 1
+var i = 1;
+var file_uploaded = false;
+var fileURL;
 
 function showPreview(event) {
     if(event.target.files.length > 0) {
@@ -16,27 +18,56 @@ $(document).ready(function(){
     toggleSubmit(hasEmptyFields());
     addListenersToTextBoxes();
 
-    //shows upload form screen
-
+    //----------shows upload form screen -----------------------
     $('#userPic a').click(function(){
         $('#upload-form').show();
     });
-
-    //"uploads" an image via circle animation before closing the upload form screen
-    $('#upload-form a').click(function(){
-        var interval = setInterval(function() {
-            if (i == time) {
-                clearInterval(interval);
-                 i = 1;
-                return;
-            }
-            $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
-            i++;
-        }, 1000);
+    $('#userPic').click(function(){
+        $('#upload-form').show();
     });
 
+    //------------- Get the Data from file input ----------------
+    $('#browse-button').change(function() {
+        var file = this.files[0];
+        var reader = new FileReader();
+        reader.onloadend = function() {
+            //alert("file read");
+            //$('#userPic svg').hide();
+            //$('#userPic a').hide();
+            //$('#userPic').css('background-image', 'url("' + reader.result + '")');
+            fileURL = reader.result;
+        }
+        if(file){
+            file_uploaded = true;
+            reader.readAsDataURL(file);
+        } else {
+        }
+    })
+    //"uploads" an image via circle animation before closing the upload form screen
+    $('#upload-button').click(function(){
+        if(file_uploaded) {
+            $('#userPic svg').hide();
+            $('#userPic a').hide();
+            $('#userPic').css('background-image', 'url("' + fileURL + '")');
+            var interval = setInterval(function() {
+                if (i == time) {
+                    clearInterval(interval);
+                    i = 1;
+                    return;
+                }
+                $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
+                i++;
+            }, 1000);
+
+        } else {
+            
+        }
+    });
+
+    //-----Close the file imput form when the x button is clicked
     $('#close-upload').click(function(){
         $('#upload-form').hide();
+        this.val(null);
         $('.circle-animation').css('stroke-dashoffset', offset);
     });
 });
