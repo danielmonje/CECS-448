@@ -2,6 +2,7 @@ var time= 3
 var offset = '440';
 var i = 1;
 var file_uploaded = false;
+var finished_uploading = false;
 var fileURL;
 
 function showPreview(event) {
@@ -65,12 +66,16 @@ $(document).ready(function(){
                 $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
                 i++;
             }, 1000);
+
         } else {
             $('#up-arrow').html('<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>');   
             $('#up-arrow path').css('fill','#e52222');
             $('#upload-error').css('color', 'red');
         }
+
     });
+    
+    
 
     //-----Close the file imput form when the x button is clicked
     $('#close-upload').click(function(){
