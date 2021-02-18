@@ -2,6 +2,7 @@ var time= 3
 var offset = '440';
 var i = 1;
 var file_uploaded = false;
+var finished_uploading = false;
 var fileURL;
 
 function showPreview(event) {
@@ -53,16 +54,20 @@ $(document).ready(function(){
                 if (i == time) {
                     clearInterval(interval);
                     i = 1;
+                    $('#upload-form').hide();
                     return;
                 }
                 $('.circle-animation').css('stroke-dashoffset', offset - ((i+1)*(offset/time)));
                 i++;
             }, 1000);
-
+        
         } else {
             
         }
+
     });
+    
+    
 
     //-----Close the file imput form when the x button is clicked
     $('#close-upload').click(function(){
