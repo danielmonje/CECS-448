@@ -3,7 +3,7 @@
 An Interactive and Responsive Form is a Registration form made with HTML, CSS, and Javascript. It takes in a user's information and mimics an interactive registration form.
 
 
-* Input Fields for Name, DOB, Username, Email, Password, Address
+* Input Fields for Name, DOB, Username, Email, Password, Phone Number, Address, and other living credentials
 * Submit button with animation
   * Once submitted, button is toggled off.
 * Upload Button with loading bar
