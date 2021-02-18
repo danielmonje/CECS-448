@@ -5,15 +5,6 @@ var file_uploaded = false;
 var finished_uploading = false;
 var fileURL;
 
-function showPreview(event) {
-    if(event.target.files.length > 0) {
-        var src = URL.createObjectURL(event.target.files[0]);
-        var preview = document.getElementById("file-ip-1-preview");
-        preview.src = src;
-        preview.style.display = "block";
-    }
-}
-
 $(document).ready(function(){
 
     toggleSubmit(hasEmptyFields());
@@ -217,16 +208,10 @@ function submitValidateFields()
 
     if(!hasErrors)
     {
-        errorMessage.hidden = true;
-        button.textContent = "Submitting...";
+        button.textContent = "Submitted!";
         button.disabled = true;
-        $(button).html('Submitting... <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>');
-        setTimeout(function() 
-        {
-            button.textContent = "Submitted!"
-            button.classList.add("button-animation");
-        }, 3000);
-        
+        button.classList.add("button-animation");
+        errorMessage.hidden = true;
     }
     else
     {
