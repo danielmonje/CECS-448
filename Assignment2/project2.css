@@ -5,8 +5,6 @@ html
 body 
 {
     margin:0;
-
-
 }
 section 
 {
@@ -48,11 +46,14 @@ ul li a
     line-height: 50px;
     box-sizing: border-box;
 }
+.nav-link:hover {
+    color: #ff847c;
+}
 #summary {
-    background-image: url(bk2.jpg);
+    background-image: url(CurveLineGreen.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position:top;
     background-attachment: fixed;
 }
 section .box {
@@ -60,7 +61,7 @@ section .box {
     width: 100%;
     padding: 40px;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     box-shadow: 1px 1px 40px black;
 }
