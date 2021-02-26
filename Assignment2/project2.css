@@ -35,6 +35,7 @@ ul
     letter-spacing: 0;
     display: flex;
     justify-content: space-around;
+    z-index: 9999;
 }
 ul li
 {
@@ -46,9 +47,66 @@ ul li a
     line-height: 50px;
     box-sizing: border-box;
 }
+
 .nav-link:hover {
     color: #ff847c;
 }
+
+
+
+/* expanding cards ************************************************************* */
+#expandingCards{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+.expand{
+    display: flex;
+    width: 70vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    border-radius: 80px;
+    color: white;
+    cursor: pointer;
+    flex: .5;
+    margin: 5px;
+    position: relative;
+    -webkit-transition: flex 0.7s ease-in; /*trying to get card animation to work on safari...*/
+    transition: flex 0.7s ease-in;
+}
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    max-width: 100%;
+    bottom: 20px;
+    left: 20px;
+    margin: 0px;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity .5s ease-in .4s;
+}
+
+/* expanding cards ************************************************************* */
+
+
 #summary {
     background-image: url(CurveLineGreen.svg);
     background-repeat: no-repeat;
