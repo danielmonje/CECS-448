@@ -5,6 +5,8 @@ html
 body 
 {
     margin:0;
+
+
 }
 section 
 {
@@ -26,7 +28,7 @@ section:before
 ul 
 {
     width:100%;
-    background: #000;
+    background: #2a363b;
     height: 50px;
     margin: 0;
     padding:0;
@@ -45,4 +47,24 @@ ul li a
     color:#fff;
     line-height: 50px;
     box-sizing: border-box;
+}
+#summary {
+    background-image: url(bk2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+section .box {
+    height: 400px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 40px black;
+}
+
+#summary .box{
+    background: #99b898;
 }
