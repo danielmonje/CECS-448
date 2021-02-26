@@ -49,7 +49,7 @@ ul li a
     line-height: 50px;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
+
 
 /* expanding cards ************************************************************* */
 #expandingCards{
@@ -102,7 +102,7 @@ ul li a
 }
 
 /* expanding cards ************************************************************* */
-=======
+
 #summary {
     background-image: url(bk2.jpg);
     background-repeat: no-repeat;
@@ -122,5 +122,4 @@ section .box {
 
 #summary .box{
     background: #99b898;
-}
->>>>>>> 552373b63d4a033f64af7d3b87a491f33ea46153
+
