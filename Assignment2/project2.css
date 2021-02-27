@@ -106,7 +106,7 @@ ul li a
 
 /* expanding cards ************************************************************* */
 
-
+/******************** Summary related stuff ************************/
 #summary {
     background-image: url(CurveLineGreen.svg);
     background-repeat: no-repeat;
@@ -121,7 +121,6 @@ section .box {
 }
 
 #summary .box{
-    background: #99b898;
     display: flex;
     flex-direction: row;
 }
@@ -133,17 +132,39 @@ section .box {
 }
 .box .tabs a{
     flex:1;
-    border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    font-weight: bold;
 }
-.tab-link:hover {
+.tab-link:hover span{
+    transform: translateX(8px);
+}
+.tab-link:hover{ color: #fecea8; }
+.tab-link.active {
     color: #fecea8;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 0 1px 5px #2A363b;
+}
+.tab-link.active span {
+    transform: translateX(8px);
+
 }
 .tab-pane {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 400px;
+    z-index: 3;
 }
+#den-link, #dtab { background-color:  #99b898; }
+#jigom-link, #jtab { background-color: #789777; }
+#kth-link, #ktab { background-color: #638361; }
+#root-link, #rtab { background-color: rgb(87, 117, 86); }
+#tiga-link, #ttab { background-color: #4e664d;}
+
+
+/************************** end summary related stuff ***************/
