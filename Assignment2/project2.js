@@ -1,6 +1,8 @@
 const panels = document.querySelectorAll('.panel');
 const tabLink = document.querySelectorAll('.tab-link');
 const tabPanes = document.querySelectorAll('.tab-pane');
+const paneImage = document.querySelectorAll('.pane-image');
+const paneDesc = document.querySelectorAll('.pane-description');
 //removeActiveClasses();
 
 panels.forEach((panel) => {
@@ -16,6 +18,8 @@ tabLink.forEach((panel, index) => {
         panel.classList.add('active');
         tabPanes[index].classList.add('active');
         tabPanes[index].classList.add('d-flex');
+        
+
     });
 });
 

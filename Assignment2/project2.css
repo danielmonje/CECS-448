@@ -144,6 +144,9 @@ section .box {
     color: white;
     font-weight: bold;
 }
+.tab-link{
+    text-decoration: none;
+}
 .tab-link:hover span{
     transform: translateX(8px);
 }
@@ -157,8 +160,8 @@ section .box {
 }
 .tab-link.active span {
     transform: translateX(20px);
-
 }
+
 .tab-pane {
     display: flex;
     align-items: center;
@@ -169,6 +172,7 @@ section .box {
     flex-direction: column;
     color: white;
 }
+
 #den-link, #dtab { background-color:  #99b898; }
 #jigom-link, #jtab { background-color: #789777; }
 #kth-link, #ktab { background-color: #638361; }
@@ -186,6 +190,5 @@ section .box {
     justify-items: center;
     text-align: center;
 }
-
 
 /************************** end summary related stuff ***************/
