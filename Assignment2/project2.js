@@ -5,26 +5,31 @@ const tabPanes = document.querySelectorAll('.tab-pane');
 
 panels.forEach((panel) => {
     panel.addEventListener('click', () => {
-        removeActiveClasses();
+        removeActiveClassesCards();
         panel.classList.add('active');
     });
 });
 
 tabLink.forEach((panel, index) => {
     panel.addEventListener('click', () => {
-        removeActiveClasses();
+        removeActiveClassesTabs();
         panel.classList.add('active');
         tabPanes[index].classList.add('active');
         tabPanes[index].classList.add('d-flex');
     });
 });
 
-function removeActiveClasses()
+function removeActiveClassesCards()
 {
     panels.forEach(panel =>
         {
             panel.classList.remove('active');
         });
+    
+}
+
+function removeActiveClassesTabs()
+{
     tabLink.forEach(panel =>
         {
             panel.classList.remove('active');
