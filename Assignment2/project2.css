@@ -150,7 +150,7 @@ section .box {
     box-shadow: 0 1px 5px #2A363b;
 }
 .tab-link.active span {
-    transform: translateX(8px);
+    transform: translateX(20px);
 
 }
 .tab-pane {
