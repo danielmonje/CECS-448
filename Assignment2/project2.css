@@ -50,6 +50,13 @@ ul li a
 
 .nav-link:hover {
     color: #ff847c;
+    position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	background: #1abc9c;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
 }
 
 
