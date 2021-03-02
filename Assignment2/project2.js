@@ -1,5 +1,6 @@
 const panels = document.querySelectorAll('.panel');
 const tabLink = document.querySelectorAll('.tab-link');
+const tabPanes = document.querySelectorAll('.tab-pane');
 //removeActiveClasses();
 
 panels.forEach((panel) => {
@@ -9,10 +10,12 @@ panels.forEach((panel) => {
     });
 });
 
-tabLink.forEach((panel) => {
+tabLink.forEach((panel, index) => {
     panel.addEventListener('click', () => {
         removeActiveClasses();
         panel.classList.add('active');
+        tabPanes[index].classList.add('active');
+        tabPanes[index].classList.add('d-flex');
     });
 });
 
@@ -25,5 +28,10 @@ function removeActiveClasses()
     tabLink.forEach(panel =>
         {
             panel.classList.remove('active');
+        });
+    tabPanes.forEach(panel =>
+        {
+            panel.classList.remove('active');
+            panel.classList.remove('d-flex');
         });
 }
