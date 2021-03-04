@@ -95,6 +95,17 @@ ul li a
     -webkit-transition: flex 0.7s ease-in; /*trying to get card animation to work on safari...*/
     transition: flex 0.7s ease-in;
 }
+
+.panel h2{
+    font-size: 28px;
+    position: absolute;
+    max-width: 100%;
+    top: 20px;
+    left: 20px;
+    margin: 0px;
+    opacity: 0;
+}
+
 .panel h3{
     font-size: 24px;
     position: absolute;
@@ -107,6 +118,11 @@ ul li a
 
 .panel.active{
     flex: 5;
+}
+
+.panel.active h2{
+    opacity: 1;
+    transition: opacity .5s ease-in .4s;
 }
 
 .panel.active h3{
@@ -210,6 +226,7 @@ section .box {
     background-position: center;
     background-color: white;
 }
+
 #dtab .pane-image{
     background-image: url(./images/Yosemite_3.jpg);
     background-size: cover;
