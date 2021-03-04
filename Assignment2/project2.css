@@ -199,4 +199,13 @@ section .box {
     position: relative;
     background-repeat:no-repeat;
 }
+
+#dtab .pane-image{
+    background-image: url(./images/Yosemite_3.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
 /************************** end summary related stuff ***************/
