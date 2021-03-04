@@ -36,6 +36,7 @@ section:before
     display: flex;
     justify-content: space-around;
     z-index: 9999;
+    border-radius: 8px;
 }
 ul li
 {
@@ -54,11 +55,14 @@ ul li a
 	top: 0;
 	z-index: 0;
 	background: #1abc9c;
-	border-radius: 8px;
-	transition: all .5s ease 0s;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
 }
-
-
+ 
+.nav-link {
+    border-radius: 8px;
+    height: 75%;
+}
 
 /* expanding cards ************************************************************* */
 #expandingCards{
@@ -191,4 +195,12 @@ section .box {
     text-align: center;
 }
 
+#ktab .pane-image{
+    background-image: url(./images/iphone.png);
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
 /************************** end summary related stuff ***************/
