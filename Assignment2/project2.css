@@ -191,4 +191,11 @@ section .box {
     text-align: center;
 }
 
+#ktab .pane-image{
+    background-image: url(./images/iphone.png);
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
 /************************** end summary related stuff ***************/
