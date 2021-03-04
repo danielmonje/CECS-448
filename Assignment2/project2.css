@@ -25,7 +25,7 @@ section:before
 }
 #top-nav 
 {
-    width:100%;
+    width: 100%;
     background: #2a363b;
     height: 50px;
     margin: 0;
@@ -36,6 +36,7 @@ section:before
     display: flex;
     justify-content: space-around;
     z-index: 9999;
+    border-radius: 8px;
 }
 ul li
 {
@@ -50,15 +51,18 @@ ul li a
 
 .nav-link:hover {
     color: #ffffff;
-	height: 100%;
+	height: 75%;
 	top: 0;
 	z-index: 0;
 	background: #1abc9c;
-	border-radius: 8px;
-	transition: all .5s ease 0s;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
 }
-
-
+ 
+.nav-link {
+    border-radius: 8px;
+    height: 75%;
+}
 
 /* expanding cards ************************************************************* */
 #expandingCards{
@@ -191,4 +195,27 @@ section .box {
     text-align: center;
 }
 
+#ktab .pane-image{
+    background-image: url(./images/iphone.png);
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
+
+#rtab .pane-image{
+    background-image: url(./images/PS5Controller.jpg);
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+#dtab .pane-image{
+    background-image: url(./images/Yosemite_3.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
 /************************** end summary related stuff ***************/
