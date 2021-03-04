@@ -203,4 +203,14 @@ section .box {
     position: relative;
     background-repeat:no-repeat;
 }
+
+#rtab .pane-image{
+    background-image: url(./images/PS5Controller.jpg);
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
 /************************** end summary related stuff ***************/
