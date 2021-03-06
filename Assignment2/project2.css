@@ -36,7 +36,7 @@ section:before
     display: flex;
     justify-content: space-around;
     z-index: 9999;
-    border-radius: 8px;
+   /* border-radius: 8px; */
 }
 ul li
 {
@@ -78,7 +78,7 @@ ul li a
 
 .expand{
     display: flex;
-    width: 70vw;
+    width: 60vw; /* changed from 70 to 60 bc had issues w display */
 }
 
 .panel{
@@ -212,12 +212,11 @@ section .box {
 }
 
 #ktab .pane-image{
-    background-image: url(./images/iphone.png);
-    background-size: contain;
-    background-position: center;
-    justify-content: center;
-    position: relative;
+    background-image: url(./images/kenny.png);
+    background-size: cover;
     background-repeat:no-repeat;
+    background-color: white;
+    padding-top: 10% ;
 }
 
 #rtab .pane-image{
@@ -236,3 +235,5 @@ section .box {
     background-repeat:no-repeat;
 }
 /************************** end summary related stuff ***************/
+
+/************************** hobbies related stuff     **************/
