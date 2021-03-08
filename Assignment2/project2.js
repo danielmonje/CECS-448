@@ -1,15 +1,22 @@
-const panels = document.querySelectorAll('.panel');
+const hobbyPanels = document.querySelectorAll('.hobby.panel');
+const projectPanels = document.querySelectorAll('.project.panel');
 const tabLink = document.querySelectorAll('.tab-link');
 const tabLinkText = document.querySelectorAll('.tab-link span');
 const tabPanes = document.querySelectorAll('.tab-pane');
 const paneImage = document.querySelectorAll('.pane-image');
 const paneDesc = document.querySelectorAll('.pane-description');
 active = 0;
-//removeActiveClasses();
 
-panels.forEach((panel) => {
+hobbyPanels.forEach((panel) => {
     panel.addEventListener('click', () => {
-        removeActiveClassesCards();
+        removeActiveClassesCards(hobbyPanels);
+        panel.classList.add('active');
+    });
+});
+
+projectPanels.forEach((panel) => {
+    panel.addEventListener('click', () => {
+        removeActiveClassesCards(projectPanels);
         panel.classList.add('active');
     });
 });
@@ -49,7 +56,7 @@ tabLink.forEach((panel, index) => {
     });
 });
 
-function removeActiveClassesCards()
+function removeActiveClassesCards(panels)
 {
     panels.forEach(panel =>
         {
