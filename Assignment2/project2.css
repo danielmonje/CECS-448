@@ -1,3 +1,12 @@
+/*
+    green: #99b898
+    yellow: #fecea8
+    peach: #ff847c
+    pink: #e84a5f
+    gray: #2a363bn
+*/
+
+
 html 
 {
     scroll-behavior: smooth;
@@ -15,7 +24,16 @@ section
 } 
 section:nth-child(odd) 
 {
-    background: #ccc;
+    background-color: #fecea8;
+    background-image: radial-gradient(#fecea8 50%, #f1b37f);
+} 
+section:nth-child(even) 
+{
+    background-image: url(CurveLineGreen.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
 } 
 section:before 
 {
@@ -36,7 +54,7 @@ section:before
     display: flex;
     justify-content: space-around;
     z-index: 9999;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 ul li
 {
@@ -54,7 +72,7 @@ ul li a
 	height: 75%;
 	top: 0;
 	z-index: 0;
-	background: #1abc9c;
+	background: #99b898;
     border-radius: 8px;
     transition: all .5s ease 0s;
 }
@@ -87,6 +105,7 @@ ul li a
     background-position: center;
     height: 80vh;
     border-radius: 80px;
+    box-shadow: 5px 2px 5px #2a363b;
     color: white;
     cursor: pointer;
     flex: .5;
@@ -100,10 +119,14 @@ ul li a
     font-size: 28px;
     position: absolute;
     max-width: 100%;
-    top: 20px;
-    left: 20px;
+    top: 40px;
+    left: 0px;
     margin: 0px;
     opacity: 0;
+    background-color: #2a363b;
+    border-radius: 8px;
+    padding: 10px 3px;
+    text-align: center;
 }
 
 .panel h3{
@@ -114,6 +137,10 @@ ul li a
     left: 20px;
     margin: 0px;
     opacity: 0;
+}
+
+#my-hobbies, #my-projects {
+    background-color: white;
 }
 
 .panel.active{
@@ -202,7 +229,7 @@ section .box {
 .pane-image {
     height: 130px;
     width: 130px;
-    border: 2px solid #2A363b;
+    border: 2px solid white;
     border-radius: 100px;
     margin-bottom: 20px;
     display: flex;
