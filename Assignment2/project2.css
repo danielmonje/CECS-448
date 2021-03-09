@@ -195,7 +195,8 @@ section .box {
     text-decoration: none;
 }
 .tab-link:hover span{
-    transform: translateX(8px);
+    transform: translateX(20px);
+    transition: all .5s ease 0s;
 }
 .tab-link:hover{ color: #fecea8; }
 .tab-link.active {

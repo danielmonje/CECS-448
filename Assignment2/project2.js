@@ -1,17 +1,27 @@
 const hobbyPanels = document.querySelectorAll('.hobby.panel');
 const projectPanels = document.querySelectorAll('.project.panel');
+const hobbyName = document.querySelectorAll('.hobby.panel h2');
+const projectPanels = document.querySelectorAll('.project.panel');
 const tabLink = document.querySelectorAll('.tab-link');
 const tabLinkText = document.querySelectorAll('.tab-link span');
 const tabPanes = document.querySelectorAll('.tab-pane');
 const paneImage = document.querySelectorAll('.pane-image');
 const paneDesc = document.querySelectorAll('.pane-description');
-active_tab = 0;
+var hobby_active = false;
+var project_active = false;
 
-hobbyPanels.forEach((panel) => {
+hobbyPanels.forEach((panel, index) => {
     panel.addEventListener('click', () => {
         removeActiveClassesCards(hobbyPanels);
         panel.classList.add('active');
+        hobby_active = True
     });
+
+    panel.addEventListener('mouseover', () => {
+        if(!hobby_active) {
+            panel.
+        }
+    }); 
 });
 
 projectPanels.forEach((panel) => {
