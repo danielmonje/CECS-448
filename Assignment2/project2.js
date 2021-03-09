@@ -7,6 +7,38 @@ const paneImage = document.querySelectorAll('.pane-image');
 const paneDesc = document.querySelectorAll('.pane-description');
 active = 0;
 
+document.onload = activeOnLoad();
+window.onload = activeOnLoad();
+function activeOnLoad() {
+    tabPanes[0].classList.add('d-flex');
+    tabPanes[0].classList.add('active');
+    anime({
+        targets: [paneImage[0], paneDesc[0]],
+        opacity: 0,
+        duration: 0,
+        translateX: -20,
+        translateY: -20,
+        loop: false
+    });
+    anime({
+            targets: paneImage[0],
+            opacity: 1,
+            duration: 2000,
+            translateX: 0,
+            translateY: 0,
+            loop: false
+    });
+    anime({
+        targets: paneDesc[0],
+        delay: 400,
+        opacity: 1,
+        duration: 2000,
+        translateX: 0,
+        translateY: 0,
+        loop: false
+    });
+}
+
 hobbyPanels.forEach((panel) => {
     panel.addEventListener('click', () => {
         removeActiveClassesCards(hobbyPanels);
@@ -52,7 +84,7 @@ tabLink.forEach((panel, index) => {
             translateX: 0,
             translateY: 0,
             loop: false
-    });
+        });
     });
 });
 
