@@ -264,7 +264,7 @@ section .box {
 }
 
 #ttab .pane-image{
-    background-image: url(./images/Daniel.pdf);
+    background-image: url(./images/Daniel.jpg);
     background-size: cover;
     background-position: center;
     justify-content: center;
