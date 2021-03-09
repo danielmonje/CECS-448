@@ -234,6 +234,15 @@ section .box {
     position: relative;
     background-repeat:no-repeat;
 }
+
+#ttab .pane-image{
+    background-image: url(./images/Daniel.pdf);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
 /************************** end summary related stuff ***************/
 
 /************************** hobbies related stuff     **************/
