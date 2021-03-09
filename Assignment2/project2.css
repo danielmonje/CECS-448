@@ -3,7 +3,7 @@
     yellow: #fecea8
     peach: #ff847c
     pink: #e84a5f
-    gray: #2a363bn
+    gray: #2a363b
 */
 
 
@@ -103,6 +103,7 @@ ul li a
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #2a363b;
     height: 80vh;
     border-radius: 80px;
     box-shadow: 5px 2px 5px #2a363b;
@@ -113,19 +114,24 @@ ul li a
     position: relative;
     -webkit-transition: flex 0.7s ease-in; /*trying to get card animation to work on safari...*/
     transition: flex 0.7s ease-in;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .panel h2{
     font-size: 28px;
-    position: absolute;
-    max-width: 100%;
-    top: 40px;
+    position: flex;
+    width: 100%;
+    top: 40vh;
     left: 0px;
     margin: 0px;
     opacity: 0;
     background-color: #2a363b;
     border-radius: 8px;
-    padding: 10px 3px;
+    padding: 10px;
     text-align: center;
 }
 
