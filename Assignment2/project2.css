@@ -25,7 +25,7 @@ section
 section:nth-child(odd) 
 {
     background-color: #fecea8;
-    background-image: radial-gradient(#fecea8 50%, #f1b37f);
+    background-image: radial-gradient(#e84a5f 50%, #f3334c);
 } 
 section:nth-child(even) 
 {
@@ -96,7 +96,7 @@ ul li a
 
 .expand{
     display: flex;
-    width: 60vw; /* changed from 70 to 60 bc had issues w display */
+    width: 70vw; /* changed from 70 to 60 bc had issues w display */
 }
 
 .panel{

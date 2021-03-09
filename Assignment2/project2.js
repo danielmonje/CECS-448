@@ -5,7 +5,7 @@ const tabLinkText = document.querySelectorAll('.tab-link span');
 const tabPanes = document.querySelectorAll('.tab-pane');
 const paneImage = document.querySelectorAll('.pane-image');
 const paneDesc = document.querySelectorAll('.pane-description');
-active = 0;
+active_tab = 0;
 
 hobbyPanels.forEach((panel) => {
     panel.addEventListener('click', () => {
@@ -24,7 +24,6 @@ projectPanels.forEach((panel) => {
 tabLink.forEach((panel, index) => {
     panel.addEventListener('click', () => {
         removeActiveClassesTabs();
-        active = index;
         panel.classList.add('active');
         tabPanes[index].classList.add('active');
         tabPanes[index].classList.add('d-flex');
