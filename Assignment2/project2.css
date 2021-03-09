@@ -101,9 +101,10 @@ ul li a
     position: absolute;
     max-width: 100%;
     top: 30px;
-    left: 25px;
+    left: 20px;
     margin: 0px;
     opacity: 0;
+    color: #e84a5f;
 }
 
 .panel h3{
@@ -111,9 +112,10 @@ ul li a
     position: absolute;
     max-width: 100%;
     bottom: 30px;
-    left: 25px;
+    left: 20px;
     margin: 0px;
     opacity: 0;
+    color: #e84a5f;
 }
 
 .panel.active{
