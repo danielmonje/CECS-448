@@ -96,7 +96,7 @@ ul li a
 
 .expand{
     display: flex;
-    width: 70vw; /* changed from 70 to 60 bc had issues w display */
+    width: 60vw; /* changed from 70 to 60 bc had issues w display */
 }
 
 .panel{
@@ -140,9 +140,10 @@ ul li a
     position: absolute;
     max-width: 100%;
     bottom: 30px;
-    left: 25px;
+    left: 20px;
     margin: 0px;
     opacity: 0;
+    color: #ff847c;
 }
 
 #my-hobbies, #my-projects {
