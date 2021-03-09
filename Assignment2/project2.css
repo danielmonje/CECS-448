@@ -89,7 +89,7 @@ ul li a
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     overflow: hidden;
     margin: auto;
 }
@@ -105,8 +105,8 @@ ul li a
     background-position: center;
     background-color: #2a363b;
     height: 80vh;
-    border-radius: 80px;
-    box-shadow: 5px 2px 5px #2a363b;
+    border-radius: 80px; 
+    box-shadow: 10px 10px 3px #2a363b;
     color: white;
     cursor: pointer;
     flex: .5;
@@ -130,7 +130,6 @@ ul li a
     margin: 0px;
     opacity: 0;
     background-color: #2a363b;
-    border-radius: 8px;
     padding: 10px;
     text-align: center;
 }
