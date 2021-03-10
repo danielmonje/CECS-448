@@ -47,6 +47,7 @@ hobbyPanels.forEach((panel, index) => {
         removeActiveClassesCards(hobbyPanels);
         panel.classList.add('active');
         hobbyActive = true;
+        projectActive = false;
         // console.log(hobbyActive);
     });
 
@@ -65,11 +66,24 @@ hobbyPanels.forEach((panel, index) => {
     })
 });
 
-projectPanels.forEach((panel) => {
+projectPanels.forEach((panel, index) => {
     panel.addEventListener('click', () => {
         removeActiveClassesCards(projectPanels);
         panel.classList.add('active');
+        hobbyActive = false;
+        projectActive = True;
     });
+
+    panel.addEventListener('mouseover', () => {
+        if(!projectActive) {
+            projectName[index].style.display="flex";
+        }
+    });
+    panel.addEventListener('mouseout', () => {
+        if(!projectActive) {
+            projectName[index].style.display="none";
+        }
+    })
 });
 
 tabLink.forEach((panel, index) => {

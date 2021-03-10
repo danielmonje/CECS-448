@@ -162,6 +162,10 @@ ul li a
     opacity: 1;
     transition: opacity .5s ease-in .4s;
 }
+.panel-text{
+    padding: 0px;
+    width: 100%;
+}
 
 /* expanding cards ************************************************************* */
 
