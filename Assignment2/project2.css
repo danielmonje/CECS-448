@@ -281,7 +281,21 @@ section .box {
     position: relative;
     background-repeat:no-repeat;
 }
+
+#jtab .pane-image {
+    background-image: url(./images/prs.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
 /************************** end summary related stuff ***************/
+/***************************** work ex *****************************/
+#example-image a{
+    font-size: 2em;
+}
+
 
 /************************** hobbies related stuff     **************/
 
