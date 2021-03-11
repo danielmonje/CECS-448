@@ -46,7 +46,7 @@ hobbyPanels.forEach((panel, index) => {
     panel.addEventListener('click', () => {
         removeActiveClassesCards(hobbyPanels);
         panel.classList.add('active');
-        hobbyActive = true;
+        hobbyActive = True;
         projectActive = false;
         hobbyName[index].style.display="flex"
         //hobbyName[index].style.display="none"
