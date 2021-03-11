@@ -24,7 +24,7 @@ section
 } 
 section:nth-child(odd) 
 {
-    background-color: #696e70;
+    background-color: #222324;
 } 
 section:nth-child(even) 
 {
@@ -105,7 +105,7 @@ ul li a
     background-color: #2a363b;
     height: 80vh;
     border-radius: 80px; 
-    box-shadow: 10px 10px 3px #2a363b;
+    /* box-shadow: 10px 10px 3px #2a363b; */
     color: white;
     cursor: pointer;
     flex: .5;
