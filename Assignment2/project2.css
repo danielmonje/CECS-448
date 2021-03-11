@@ -312,7 +312,19 @@ section .box {
 
 
 /************************** hobbies related stuff     **************/
-
+#projectex {
+    background-color: #fecea8
+}
+.projects {
+    background-color:#2a363b;
+    padding: 20px;
+    border-radius: 5px;
+    width: 450px;
+    height: 400px;
+}
+.projects hr{
+    color: white;
+}
 
 #projectex h1
 {

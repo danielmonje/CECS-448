@@ -7,6 +7,7 @@ const tabLinkText = document.querySelectorAll('.tab-link span');
 const tabPanes = document.querySelectorAll('.tab-pane');
 const paneImage = document.querySelectorAll('.pane-image');
 const paneDesc = document.querySelectorAll('.pane-description');
+const projectDesc = document.querySelectorAll('.projects');
 var hobbyActive = false;
 var projectActive = false;
 
@@ -49,15 +50,10 @@ hobbyPanels.forEach((panel, index) => {
         hobbyActive = true;
         projectActive = false;
         hobbyName[index].style.display="flex"
-        //hobbyName[index].style.display="none"
-        // console.log(hobbyActive);
     });
 
     panel.addEventListener('mouseover', () => {
-        // console.log(hobbyActive);
         if(!hobbyActive) {
-            // console.log(hobbyName.length)
-            // console.log(index);
             hobbyName[index].style.display="flex";
         }
     });
@@ -70,6 +66,10 @@ hobbyPanels.forEach((panel, index) => {
 
 projectPanels.forEach((panel, index) => {
     panel.addEventListener('click', () => {
+        
+        hideAllProjects();
+        projectDesc[index+1].style.display = 'block';
+
         removeActiveClassesCards(projectPanels);
         panel.classList.add('active');
         hobbyActive = false;
@@ -141,6 +141,14 @@ function removeActiveClassesTabs()
         {
             panel.classList.remove('active');
             panel.classList.remove('d-flex');
+        });
+}
+
+function hideAllProjects()
+{
+    projectDesc.forEach(project =>
+        {
+            project.style.display='none';
         });
 }
 
