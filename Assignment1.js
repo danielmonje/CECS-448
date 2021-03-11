@@ -1,6 +1,6 @@
-var time= 3
+var time= 3;
 var offset = '440';
-var i = 1
+var i = 1;
 
 function showPreview(event) {
     if(event.target.files.length > 0) {
@@ -24,6 +24,34 @@ $(document).ready(function(){
 
     //"uploads" an image via circle animation before closing the upload form screen
     $('#upload-form a').click(function(){
+        
+        // if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
+        //     alert('The File APIs are not fully supported in this browser.');
+        //     return;
+        //   }   
+        
+        //   var input = document.getElementById('fileinput');
+        //   if (!input) {
+        //     alert("Um, couldn't find the fileinput element.");
+        //   }
+        //   else if (!input.files) {
+        //     alert("This browser doesn't seem to support the `files` property of file inputs.");
+        //   }
+        //   else if (!input.files[0]) {
+        //     alert("Please select a file before clicking 'Load'");               
+        //   }
+        //   else {
+        //     var file = input.files[0];
+        //     var fr = new FileReader();
+        //     fr.onload = receivedText;
+        //     //fr.readAsText(file);
+        //     //fr.readAsBinaryString(file); //as bit work with base64 for example upload to server
+        //     fr.readAsDataURL(file);
+        //   }
+
+        var file_url = $('#browse-button').prop('files')[0];
+        $('body').css('background-image', file_url);
+
         var interval = setInterval(function() {
             if (i == time) {
                 clearInterval(interval);
@@ -38,6 +66,7 @@ $(document).ready(function(){
     $('#close-upload').click(function(){
         $('#upload-form').hide();
         $('.circle-animation').css('stroke-dashoffset', offset);
+        i = 1;
     });
 });
 
