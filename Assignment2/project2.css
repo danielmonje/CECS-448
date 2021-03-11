@@ -142,7 +142,7 @@ ul li a
     margin: 0px;
     opacity: 0;
     color: white;
-    background-color: #2a363b;
+    /* background-color: #2a363b; */
 }
 
 #my-hobbies, #my-projects {
@@ -309,12 +309,12 @@ section .box {
     font-size: 1.8em;
 }
 .btn-primary {
-    background-color: #e84a5f;
-    border: 1px solid #f15b6f;
+    background-color: #6d8d6c;
+    border: 1px solid #658664;
 }
 .btn-primary:hover {
-    background-color: #d4102a;
-    border: 1px solid #c20821;
+    background-color: #597758;
+    border: 1px solid #506950;
 }
 
 
