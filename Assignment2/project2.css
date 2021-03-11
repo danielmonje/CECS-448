@@ -308,6 +308,14 @@ section .box {
 #example-button a{
     font-size: 1.8em;
 }
+.btn-primary {
+    background-color: #e84a5f;
+    border: 1px solid #ec2f48;
+}
+.btn-primary:hover {
+    background-color: #d4102a;
+    border: 1px solid #c20821;
+}
 
 
 
