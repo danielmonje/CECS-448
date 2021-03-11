@@ -1,6 +1,6 @@
 ## **Develop a Portfolio Website**
 
-An Interactive and Responsive Form is a Registration form made with HTML, CSS, and Javascript. It takes in a user's information and mimics an interactive registration form.
+The portfolio website contains our group's information about ourselves, such as any projects we are working on and hobbies. No user information is needed, but the website is interactive, with UI changes and animations to make it more lively.
 
 
 # How to View Website on Any Computer
