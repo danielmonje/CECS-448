@@ -24,8 +24,7 @@ section
 } 
 section:nth-child(odd) 
 {
-    background-color: #fecea8;
-    background-image: radial-gradient(#e84a5f 50%, #f3334c);
+    background-color: #696e70;
 } 
 section:nth-child(even) 
 {
@@ -142,7 +141,8 @@ ul li a
     left: 20px;
     margin: 0px;
     opacity: 0;
-    color: #e84a5f;
+    color: white;
+    background-color: #2a363b;
 }
 
 #my-hobbies, #my-projects {
@@ -310,7 +310,7 @@ section .box {
 }
 .btn-primary {
     background-color: #e84a5f;
-    border: 1px solid #ec2f48;
+    border: 1px solid #f15b6f;
 }
 .btn-primary:hover {
     background-color: #d4102a;
@@ -336,13 +336,13 @@ section .box {
 
 #projectex h1
 {
-    color: #e84a5f;
-    font-family: "Courier New", Courier, monospace;
+    color: #e2e2e2;
+    /* font-family: "Courier New", Courier, monospace; */
 }
 #projectex p
 {
     color: #fecea8;
-    font-family: "Courier New", Courier, monospace;
+    /* font-family: "Courier New", Courier, monospace; */
 }
 
 #projectex
