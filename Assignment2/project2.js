@@ -48,6 +48,8 @@ hobbyPanels.forEach((panel, index) => {
         panel.classList.add('active');
         hobbyActive = true;
         projectActive = false;
+        hobbyName[index].style.display="flex"
+        //hobbyName[index].style.display="none"
         // console.log(hobbyActive);
     });
 
