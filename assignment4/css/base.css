@@ -12,3 +12,16 @@ a:hover {
     font-weight: bolder;
     text-decoration: underline solid currentColor 2px;
 }
+
+.btn-primary {
+    background-color: #b4252d;
+    border-color: #a51d24;
+}
+.btn-primary:hover {
+    background-color: #801319;
+    border-color: #a51d24;
+}
+.btn-primary:focus{
+    background-color: #b4252d;
+    border-color: #a51d24;
+}
