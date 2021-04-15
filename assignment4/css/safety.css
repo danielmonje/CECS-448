@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+.section-header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+    line-height: 90%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #b4252d;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.section-header2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    color: #b4252d;
+    padding-bottom: 10px;
+}
+.col-md {
+    min-width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.safety-title {
+    font-weight: bolder;
+}
