@@ -1,6 +1,11 @@
 body {
     background-color: #edeade;
-}
+    background-image: url(../img/habitgrid2.png);
+    background-size: 50%;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}   
 a {
     color:#b4252d;
     font-weight: bolder;
@@ -24,4 +29,12 @@ a:hover {
 .btn-primary:focus{
     background-color: #b4252d;
     border-color: #a51d24;
+}
+
+@media only screen and (max-width: 900px) {
+    .container{
+        padding-left: 10px;
+        padding-right: 0px;
+        margin: 0px;
+    }
 }
