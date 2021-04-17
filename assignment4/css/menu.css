@@ -15,6 +15,9 @@
 .right {
     margin-left: 200px;
 }
+.hidden {
+    display: none;
+}
 .title-menu {
     font-size: 2em;
 }
