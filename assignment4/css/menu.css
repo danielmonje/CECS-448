@@ -1,11 +1,17 @@
+
 .title-menu, .title-category {
     color: #b4252d;
     line-height: 80%;
     margin-left: 50px;
 }
+.title-description {
+
+}
 .sidebar {
-    padding-top: 20%;
+    margin-top: 20%;
     position: fixed;
+    background-color: tan;
+
 }
 .sidebar div{
     padding-bottom: 10px;
