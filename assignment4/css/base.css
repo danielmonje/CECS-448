@@ -32,9 +32,16 @@ a:hover {
 }
 
 @media only screen and (max-width: 900px) {
+    body {
+        padding:0;
+        margin: 0;
+        background-color: white;
+        background-image: none;
+    }
     .container{
         padding-left: 10px;
         padding-right: 0px;
         margin: 0px;
+        width: 100vw;
     }
 }

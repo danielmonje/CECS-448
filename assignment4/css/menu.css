@@ -1,25 +1,35 @@
-
+.container {
+    background-color: white;
+    padding: 20px;
+    overflow: inherit;
+}
 .title-menu, .title-category {
     color: #b4252d;
     line-height: 80%;
     margin-left: 50px;
 }
-.title-description {
-
-}
 .sidebar {
-    margin-top: 20%;
+    padding-top: 20%;
     position: fixed;
-    background-color: tan;
-
 }
 .sidebar div{
     padding-bottom: 10px;
     color: #b4252d;
     font-weight: bold;
 }
+.left {
+    max-width: 3000px;
+    padding-right: 200px;
+}
+.side-link {
+    text-decoration: none;
+}
+.side-link:hover {
+    transform: translateX(20px);
+    transition: all .5s ease 0s;
+}
 .right {
-    margin-left: 200px;
+    max-width: 1000px;
 }
 .hidden {
     display: none;
@@ -37,11 +47,16 @@
 }
 .col-sm {
     max-width: 400px;
-    min-width: 250px;
+    min-width: 300px;
     margin: 10px;
     display: flex;
     padding: 20px;
     text-align: center;
+    position: relative;
+}
+.card:hover {
+    box-shadow: 0 0 10px #edeade;
+    transition: box-shadow .3s;
 }
 
 .btn {
@@ -50,8 +65,14 @@
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 750px) {
     .title-category {
         font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .container {
+        min-width: 750px;
     }
 }
