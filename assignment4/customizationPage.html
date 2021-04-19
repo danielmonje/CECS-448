@@ -22,30 +22,29 @@
                 <img alt="Photo of #1 Original Charburger" id="pic" class="ProductCard_image__3o18D"
                     src="https://habit-images.s3.us-east-2.amazonaws.com/97559b71-b030-4627-9c65-331a733928ab@$1x">
                 <h2>Original Charburger</h2>
-                <div>510 cal</div>
+                <div class="d-flex flex-row"><div class="price">Price: $8.60</div><div class="ml-auto calories">910-1114 Cal</div></div>
             </div>
             <!-- required dropdown and add ons -->
             <div class="d-flex flex-row required card">
-                <h3>Required</h3> <button class="btn btn-primary dropdown-toggle" type="button"
-                    data-toggle="dropdown">Dropdown Example
-                    <span class="caret"></span>
+                <h3>Required</h3> 
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                </ul>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
             </div>
             <div class="d-flex flex-row addOns card">
-                <h3>Add Ons</h3> <button class="btn btn-primary dropdown-toggle" type="button"
-                    data-toggle="dropdown">Dropdown Example
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                </ul>
+                <h3>Add Ons</h3> 
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
             </div>
             <!-- special instructions -->
             <div class="d-flex flex-column textarea">
@@ -53,7 +52,24 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <!-- add to cart and quantity-->
-            <div class="d-flex button-div"><button class="btn btn-primary">Add to cart</button></div>
+            <div class="d-flex flex-row">
+                <div class="qty mt-5">
+                    <span class="minus bg-dark">-</span>
+                    <input type="number" class="count" name="qty" value="1">
+                    <span class="plus bg-dark">+</span>
+                </div>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        
+            
+
+            <!-- testiong code -->
+            <div class="qty mt-5">
+                <span class="minus bg-dark">-</span>
+                <input type="number" class="count" name="qty" value="1">
+                <span class="plus bg-dark">+</span>
+            </div>
+
         </div>
     </div>
 
