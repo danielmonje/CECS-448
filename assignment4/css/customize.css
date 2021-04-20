@@ -29,3 +29,9 @@ a:hover {
     background-color: #b4252d;
     border-color: #a51d24;
 }
+
+img {
+    width: auto;
+    height:auto;
+    margin: auto;
+}
