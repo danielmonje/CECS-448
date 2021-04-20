@@ -1,0 +1,181 @@
+html 
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    margin:0;
+}
+section 
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center
+} 
+section:nth-child(odd) 
+{
+    background-color: #222324;
+} 
+section:nth-child(even) 
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+} 
+section:before 
+{
+    content: attr(data-text);
+    color: #262626;
+    font-size: 8em;
+}
+#top-nav 
+{
+    width: 100%;
+    background: #2a363b;
+    height: 50px;
+    margin: 0;
+    padding:0;
+    position:fixed;
+    top:0;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 9999;
+    /* border-radius: 8px; */
+}
+ul li
+{
+    list-style: none;
+}
+ul li a
+{
+    color:#fff;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+	height: 75%;
+	top: 0;
+	z-index: 0;
+	background: #99b898;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+ 
+.nav-link {
+    border-radius: 8px;
+    height: 75%;
+}
+
+/******************** Summary related stuff ************************/
+#summary {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+}
+section .box {
+    height: 400px;
+    width: 1200px;
+    box-shadow: 0px 0px 40px black;
+}
+
+#summary .box{
+    display: flex;
+    flex-direction: row;
+}
+.box .tabs{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 0px;
+}
+.box .tabs a{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.tab-link{
+    text-decoration: none;
+}
+.tab-link:hover span{
+    transform: translateX(20px);
+    transition: all .5s ease 0s;
+}
+.tab-link:hover{ color: #fecea8; }
+.tab-link.active {
+    color: #fecea8;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 0 1px 5px #2A363b;
+}
+.tab-link.active span {
+    transform: translateX(20px);
+}
+
+.tab-pane {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    z-index: 3;
+    padding: 50px;
+    flex-direction: column;
+    color: white;
+}
+
+#who-we-are-link, #wtab { background-color:  #99b898; }
+#careers-path-link, #ctab { background-color: #789777; }
+#faqs-link, #ftab { background-color: #638361; }
+#apply-now-link, #atab { background-color: rgb(87, 117, 86); }
+
+.pane-image {
+    height: 130px;
+    width: 130px;
+    border: 2px solid white;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#wtab .pane-image{
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: white;
+    padding-top: 10% ;
+}
+
+#ctab .pane-image{
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+#ftab .pane-image{
+    /* background-image: url(./images/); */
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
+
+#atab .pane-image{
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    background-repeat:no-repeat;
+}
+/************************** end summary related stuff ***************/
