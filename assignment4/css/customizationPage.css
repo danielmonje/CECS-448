@@ -14,7 +14,7 @@
     height: 50px;
     font-size: xx-large;
     position: absolute;
-    right: 40px; /* might change this */
+    right: 20px; /* might change this */
 }
 
 .dropdown-toggle {
@@ -32,9 +32,38 @@
 .btn-primary {
     position: absolute;
     align-self: center;
+    right: 20px;
+}
+
+h3 {
+    padding-right: 930px;
+}
+
+h4 {
+    position: absolute;
+    left: 260px;
+}
+
+h5 {
+    position:absolute;
     right: 10px;
 }
 
+.price {
+    margin-bottom: 5px;
+}
+
+.addOns {
+    margin-bottom: 10px;
+}
+
+.required {
+  margin-bottom: 10px;
+}
+
+.textarea {
+    margin-bottom: 10px;
+}
 
 /* + - code */
 .mt-5 {
