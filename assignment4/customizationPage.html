@@ -25,26 +25,101 @@
                 <div class="d-flex flex-row"><div class="price">Price: $8.60</div><div class="ml-auto calories">910-1114 Cal</div></div>
             </div>
             <!-- required dropdown and add ons -->
-            <div class="d-flex flex-row required card">
-                <h3>Required</h3> 
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                </button>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <button class="dropdown-item" type="button">Action</button>
-                    <button class="dropdown-item" type="button">Another action</button>
-                    <button class="dropdown-item" type="button">Something else here</button>
-                  </div>
+            <div class="d-flex flex-column required card">
+                <h3>Required</h3>
+                <div class="d-flex flex-row cheese card"> 
+                    <div class="d-flex flex-row">
+                        <div class="qty">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
+                    <h4>Cheese</h4>
+                    <h5>15 Cal</h5>
+                </div>
+                <div class="d-flex flex-row tomato card">
+                    <div class="d-flex flex-row">
+                        <div class="qty">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
+                    <h4>Tomato</h4> 
+                    <h5>15 Cal</h5>
+                </div>
+                <div class="d-flex flex-row card"> 
+                    <div class="d-flex flex-row">
+                        <div class="qty">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
+                    <h4>Lettuce</h4>
+                    <h5>15 Cal</h5>
+                </div>
+                <div class="d-flex flex-row tomato card">
+                    <div class="d-flex flex-row">
+                        <div class="qty">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
+                    <h4>Grilled Onions</h4> 
+                    <h5>15 Cal</h5>
+                </div>
             </div>
-            <div class="d-flex flex-row addOns card">
+
+            <!-- ADD ONS SECTIONS -->
+            <div class="d-flex flex-column addOns card">
                 <h3>Add Ons</h3> 
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <button class="dropdown-item" type="button">Action</button>
-                    <button class="dropdown-item" type="button">Another action</button>
-                    <button class="dropdown-item" type="button">Something else here</button>
-                  </div>
+                <div class="d-flex flex-row patty card"> 
+                    <div class="d-flex flex-row">
+                        <div class="qty">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
+                    <h4>Patty</h4>
+                    <h5>15 Cal</h5>
+                </div>
+                <div class="d-flex flex-row sauce card">
+                    <div class="d-flex flex-row">
+                        <div class="qty">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
+                    <h4>Extra Sauce</h4> 
+                    <h5>15 Cal</h5>
+                </div>
+                <div class="d-flex flex-row mushroom card"> 
+                    <div class="d-flex flex-row">
+                        <div class="qty">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
+                    <h4>Mushroom</h4>
+                    <h5>15 Cal</h5>
+                </div>
+                <div class="d-flex flex-row Bacon card">
+                    <div class="d-flex flex-row">
+                        <div class="qty">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
+                    <h4>Bacon</h4> 
+                    <h5>15 Cal</h5>
+                </div>
             </div>
             <!-- special instructions -->
             <div class="d-flex flex-column textarea">
@@ -53,7 +128,7 @@
             </div>
             <!-- add to cart and quantity-->
             <div class="d-flex flex-row">
-                <div class="qty mt-5">
+                <div class="qty">
                     <span class="minus bg-dark">-</span>
                     <input type="number" class="count" name="qty" value="1">
                     <span class="plus bg-dark">+</span>
@@ -64,11 +139,7 @@
             
 
             <!-- testiong code -->
-            <div class="qty mt-5">
-                <span class="minus bg-dark">-</span>
-                <input type="number" class="count" name="qty" value="1">
-                <span class="plus bg-dark">+</span>
-            </div>
+ 
 
         </div>
     </div>

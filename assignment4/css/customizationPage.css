@@ -21,6 +21,10 @@
     margin-left: auto;
 }
 
+.dropdown-item {
+    width: fit-content;
+}
+
 .textarea {
     text-align: left;
 }
@@ -31,9 +35,10 @@
     right: 10px;
 }
 
+
 /* + - code */
 .mt-5 {
-    top: 2px;
+    align-self: center;
 }
 
 .qty .count {
@@ -52,6 +57,7 @@
     font: 30px/1 Arial,sans-serif;
     text-align: center;
     border-radius: 50%;
+
     }
 .qty .minus {
     cursor: pointer;
