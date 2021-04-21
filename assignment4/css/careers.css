@@ -126,11 +126,11 @@ section .box {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 1000px;
     z-index: 3;
     width: 1200px;
     padding: 50px;
-    flex-direction: columnr;
+    flex-direction: column;
     color: white;
 }
 
@@ -140,10 +140,9 @@ section .box {
 #apply-now-link, #atab { background-color: #ff6257; }
 
 .pane-image {
-    height: 130px;
-    width: 130px;
+    height: 550px;
+    width: 550px;
     border: 2px solid white;
-    border-radius: 100px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -152,10 +151,15 @@ section .box {
 }
 
 #wtab .pane-image{
+    background-image: url(../images/HabitBurgerDiff.jpg);
     background-size: cover;
     background-repeat:no-repeat;
     background-color: white;
     padding-top: 10% ;
+}
+
+#wtab .pane-description {
+    font-size: 20px;
 }
 
 #ctab .pane-image{
