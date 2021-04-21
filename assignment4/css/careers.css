@@ -86,12 +86,13 @@ section .box {
 
 #summary .box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .box .tabs{
     display: flex;
-    flex-direction: column;
-    height: 400px;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
     padding: 0px;
 }
 .box .tabs a{
@@ -125,10 +126,11 @@ section .box {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 500px;
     z-index: 3;
+    width: 1200px;
     padding: 50px;
-    flex-direction: column;
+    flex-direction: columnr;
     color: white;
 }
 
