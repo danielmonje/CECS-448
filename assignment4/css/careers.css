@@ -15,7 +15,7 @@ section
 } 
 section:nth-child(odd) 
 {
-    background-color: #222324;
+    background-color: #fff5e6;
 } 
 section:nth-child(even) 
 {
@@ -132,10 +132,10 @@ section .box {
     color: white;
 }
 
-#who-we-are-link, #wtab { background-color:  #99b898; }
-#careers-path-link, #ctab { background-color: #789777; }
-#faqs-link, #ftab { background-color: #638361; }
-#apply-now-link, #atab { background-color: rgb(87, 117, 86); }
+#who-we-are-link, #wtab { background-color:  #c20d00; }
+#careers-path-link, #ctab { background-color: #eb1000; }
+#faqs-link, #ftab { background-color: #d92d21; }
+#apply-now-link, #atab { background-color: #ff6257; }
 
 .pane-image {
     height: 130px;
