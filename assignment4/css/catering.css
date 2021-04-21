@@ -13,3 +13,8 @@ label{
     padding: 0 0 10px 0;
     color: #2A737E;
     }
+.container {
+    background-color: white;
+    padding: 20px;
+    overflow: inherit;
+}
