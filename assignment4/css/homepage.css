@@ -18,7 +18,8 @@
 }
 
 #myCarousel {
-    height: 94vh;
+    position: relative;
+    height: 60%;
     display: flex;
 
 }
