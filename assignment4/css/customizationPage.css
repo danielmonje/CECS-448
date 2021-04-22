@@ -1,10 +1,11 @@
 .container {
     display: flex;
+    position: relative;
 }
 
 .col-sm {
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     text-align: center;
 }
@@ -14,11 +15,15 @@
     height: 50px;
     font-size: xx-large;
     position: absolute;
-    right: 40px; /* might change this */
+    right: 20px; /* might change this */
 }
 
 .dropdown-toggle {
     margin-left: auto;
+}
+
+.dropdown-item {
+    width: fit-content;
 }
 
 .textarea {
@@ -28,12 +33,54 @@
 .btn-primary {
     position: absolute;
     align-self: center;
+    right: 20px;
+}
+
+h3 {
+    padding-right: 930px;
+}
+
+h4 {
+    position: absolute;
+    left: 260px;
+}
+
+h5 {
+    position:absolute;
     right: 10px;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.addOns {
+    margin-bottom: 10px;
+}
+
+.required {
+  margin-bottom: 10px;
+}
+
+.textarea {
+    margin-bottom: 10px;
+}
+
+#info {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+h6 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    float: left;
 }
 
 /* + - code */
 .mt-5 {
-    top: 2px;
+    align-self: center;
 }
 
 .qty .count {
@@ -47,17 +94,20 @@
     display: inline-block;
     vertical-align: top;
     color: white;
+    background-color: #b4252d;
     width: 30px;
     height: 30px;
     font: 30px/1 Arial,sans-serif;
     text-align: center;
     border-radius: 50%;
+
     }
 .qty .minus {
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
     color: white;
+    background-color: #b4252d;
     width: 30px;
     height: 30px;
     font: 30px/1 Arial,sans-serif;
