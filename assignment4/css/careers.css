@@ -5,6 +5,7 @@ html
 body 
 {
     margin:0;
+    background-image: url(../img/habitgrid2.png);
 }
 section 
 {
@@ -13,6 +14,15 @@ section
     justify-content: center;
     align-items:center
 } 
+
+h2 {
+    color: #b4252d;
+}
+
+h3 {
+    color: #b4252d;
+}
+
 section:nth-child(odd) 
 {
     background-color: #fff5e6;
@@ -114,6 +124,10 @@ section .box {
 #ftab { background-color: #fff5e6; }
 #atab { background-color: #fff5e6; }
 
+.title{
+    color: #b4252d;
+}
+
 .pane-image {
     height: 550px;
     width: 550px;
@@ -136,6 +150,11 @@ section .box {
     background-repeat:no-repeat;
     background-color: white;
     padding-top: 10% ;
+}
+
+#ftab .pane-description{
+text-align: left;
+font-size: 16px;
 }
 
 #atab .pane-image{
