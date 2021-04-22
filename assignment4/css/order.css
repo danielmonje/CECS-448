@@ -32,7 +32,12 @@ h1 {
     margin-bottom: 5px;
 }
 
-.picMalt {
-    height: 100px;
-    width: 100px;
+#picChar {
+    height: 200px;
+    width: 200px;
+}
+
+#picMalt {
+    height: 200px;
+    width: 250px;
 }
