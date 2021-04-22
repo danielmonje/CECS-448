@@ -3,6 +3,7 @@
     padding: 20px;
     overflow: inherit;
     position: relative;
+    
 }
 .topleft {
     position: absolute;
@@ -63,7 +64,7 @@
     position: relative;
 }
 .card:hover {
-    box-shadow: 0 0 10px #edeade;
+    box-shadow: 0 0 20px #edeade;
     transition: box-shadow .3s;
 }
 
@@ -71,6 +72,17 @@
     margin: 0 auto;
     margin-top: auto;
     margin-bottom: 10px;
+}
+.prcal {
+    font-weight: bold;
+}
+.button-div{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    margin: auto;
+    
 }
 
 @media only screen and (max-width: 750px) {

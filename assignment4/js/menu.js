@@ -1,5 +1,7 @@
-var links = document.querySelectorAll(".side-link")
-var sections = document.querySelectorAll(".menu-category")
+var links = document.querySelectorAll(".side-link");
+var sections = document.querySelectorAll(".menu-category");
+var buttons = document.querySelectorAll(".order-btn");
+var cards = document.querySelectorAll(".card");
 
 links.forEach((link, index) => {
     link.addEventListener('click', () =>{
@@ -9,6 +11,24 @@ links.forEach((link, index) => {
         showSection(index);
 
 
+    });
+});
+
+buttons.forEach(btn =>{
+    btn.addEventListener('click', () =>{
+        window.location = "customizationPage.html";
+    });
+});
+
+cards.forEach((card, index)=> {
+    card.addEventListener("mouseover", ()=>{
+        console.log("Entering card" + index);
+        console.log("$('.button-div').eq("+index+").show();");
+        $(".button-div").eq(index).show();
+    });
+    card.addEventListener("mouseout", ()=>{
+        console.log("Exiting card" + index);
+        $(".button-div").eq(index).hide();
     });
 });
 
