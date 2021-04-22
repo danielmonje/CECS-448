@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    position: relative;
 }
 
 .col-sm {
@@ -41,7 +42,7 @@ h3 {
 
 h4 {
     position: absolute;
-    left: 260px;
+    left: 280px;
 }
 
 h5 {
@@ -63,6 +64,18 @@ h5 {
 
 .textarea {
     margin-bottom: 10px;
+}
+
+#info {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+h6 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    float: left;
 }
 
 /* + - code */
