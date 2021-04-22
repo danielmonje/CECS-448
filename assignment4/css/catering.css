@@ -1,6 +1,6 @@
 h3{
     text-transform: uppercase;
-    font-size: 1.750em;
+    font-size: 1.550em;
     line-height: 110%;
     padding: 0 0 10px 0;
     color: #2A737E;
@@ -13,8 +13,25 @@ label{
     padding: 0 0 10px 0;
     color: #2A737E;
     }
+th{
+    width: 300px;
+}
 .container {
     background-color: white;
     padding: 20px;
     overflow: inherit;
+}
+.title, .subtitle {
+    color: #b4252d;
+    line-height: 80%;
+    margin-left: 50px;
+}
+.subtitle {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+.menu-descrips{
+    font-size: small;
+    width: 200px;
 }

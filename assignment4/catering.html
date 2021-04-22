@@ -10,7 +10,10 @@
 <body>
 <!--Nav bar goes here-->
 
+<!-- Background -->
 <div class="container">
+    <div class="title">On the Road</div>
+    <div class="subtitle">HABIT TRUCK</div>
    <!-- Carousel -->
 <div style="padding: 25px;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -78,13 +81,71 @@
             </div>
           </div>
     </div>
+
+    <!-- Truck Dimension -->
+    <div style="padding: 25px;">
+        <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapseDimension">Truck Dimensions</a>
+                </h4>
+              </div>
+              <div id="collapseDimension" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item">33 ft. long</li>
+                  <li class="list-group-item">13 ft. high</li>
+                  <li class="list-group-item">8 ft. wide</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+    
+      <!-- Truck Highlights -->
+      <div style="padding: 25px;">
+        <div class="panel-group">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapseHighlights">Truck Highlights</a>
+                </h4>
+            </div>
+            <div id="collapseHighlights" class="panel-collapse collapse">
+                <ul class="list-group">
+                <li class="list-group-item">Perfect for events of all sizes</li>
+                <li class="list-group-item">Completely self-sufficient</li>
+                <li class="list-group-item">Truck can be booked for a food minimum of $1,700 plus tax.</li>
+                <li class="list-group-item">Charburger with cheese, French fries, and a beverage start at $11.45 per person, plus tax.</li>
+                <li class="list-group-item">The Food minimum feeds up to 148 guests.</li>
+                <li class="list-group-item">Upon booking we require a $500 deposit signed contract. The deposit will be applied to the overall cost of the event.</li>
+                <li class="list-group-item">Standard Service time is 1.5 hours and $175 for each additional 1/2 hour.</li>
+                <li class="list-group-item">Our Truck can accommodate 275 guests per hour (Charburger w/Cheese & Veggie Burger Combo Meals Only, without customizations).</li>
+                <li class="list-group-item">Suggested menu for 200 or more guests: Single Charburger w/Cheese & Veggie Burger Combo Meals.</li>
+                <li class="list-group-item">Habit Trucks will travel 1 hour and 60 miles roundtrip. Each additional 30 minutes of drive time is $150 and $2.75 per mile.</li>
+                <li class="list-group-item">The Truck will arrive 45 minutes before the scheduled service time to set up.</li>
+                <li class="list-group-item">Final payment is due 10 days before the event date.</li>
+                <li class="list-group-item">A $300 late night fee will apply to events scheduled between the hours of 9:00 pm – 11:59 pm.</li>
+                <li class="list-group-item">A $500 late night fee will apply to events scheduled between the hours of 12:00 am – 7:00 am.</li>
+                <li class="list-group-item">A $300 holiday fee will be applied to the following Holidays: New Year’s Day, Memorial Day, 4th of July, Labor Day, Halloween, Christmas Eve, New Year’s Eve.</li>
+                <li class="list-group-item">The Habit Truck will provide napkins, condiments, and trash cans. Tables and chairs for guests are not provided.</li>
+                <li class="list-group-item">The Habit Truck can provide business license permits, health department permits and certificates of insurance. Other permits, such as park permits, and entrance fees will need to be secured by the guest.</li>
+                <li class="list-group-item">A map and directions of how to get to your location and where the Truck will be parked is appreciated.</li>
+                <li class="list-group-item">Prices, terms, and conditions are subject to change.</li>
+                </ul>
+                <div class="panel-footer">We apologize, but we are unable to service Santa Barbara County. Advance reservations required. Terms & conditions apply.</div>
+            </div>
+            </div>
+        </div>
+      </div> 
     
     <!-- Form -->
     <div class="panel-group" style="padding: 25px;">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" href="#collapseForm">Sign Up for a Truck</a>
+              <a data-toggle="collapse" href="#collapseForm">Let's plan your party!</a>
             </h4>
           </div>
           <div id="collapseForm" class="panel-collapse collapse">
@@ -173,104 +234,307 @@
                         <label for="phoneInput">Phone</label>
                         <input type="tel" class="form-control" id="phoneInput" placeholder="555-555-5555">
                        </div>
-    
-    
-    
-                    <!-- examples -->
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                      </div>
+
+                       <!-- Truck Menu -->
+                       <!-- Charburger table -->
+                       <label for="menuTables">Menu - $1700 + TAX FOOD MINIMUM REQUIRED FOR ALL CATERING TRUCK EVENTS</label>
+                       <div id="menuTables">
+                       <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Charburgers</th>
+                            <th scope="col">A La Carte</th>
+                            <th scope="col">Quantity A La Carte</th>
+                            <th scope="col">Combo</th>
+                            <th scope="col">Quantity Combo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Charburger</label>
+                                <p class="menu-descrips">with Cheese</p>
+                            </th>
+                            <td>$5.95</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                            <td>$11.45</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Double Char</label>
+                                <p class="menu-descrips">with Cheese</p>
+                            </th>
+                            <td>$7.25</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                            <td>$12.75</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- Grilled sandwiches table -->
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Grilled Sandwiches</th>
+                            <th scope="col">A La Carte</th>
+                            <th scope="col">Quantity A La Carte</th>
+                            <th scope="col">Combo</th>
+                            <th scope="col">Quantity Combo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                <label for="">BBQ Chicken</label>
+                                <p class="menu-descrips">Hand-filleted marinated chicken breast, 
+                                    Swiss cheese crisp shredded lettuce, fresh tomatoes, mayo 
+                                    and BBQ sauce</p>
+                            </th>
+                            <td>$8.35</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                            <td>$13.85</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Tri-Tip Steak</label>
+                                <p class="menu-descrips">Hand-cut marinated tri-tip steak with crisp shredded 
+                                    lettuce, fresh tomatoes and BBQ Sauce</p>
+                            </th>
+                            <td>$9.10</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                            <td>$14.60</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Ahi Tuna Filet</label>
+                                <p class="menu-descrips">Line-caught sushi-grade tuna steak with with a 
+                                    teriyaki glaze, crisp shredded lettuce, fresh tomatoes and our 
+                                    homemade tartar sauce</p>
+                            </th>
+                            <td>$9.10</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                            <td>$14.60</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Veggie Burger</label>
+                                <p class="menu-descrips">Veggie patty with green leaf lettuce, fresh tomatoes, 
+                                    cucumbers, onions and Sweet Mustard dressing</p>
+                            </th>
+                            <td>$7.45</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                            <td>$12.95</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Grilled Cheese</label>
+                                <p class="menu-descrips">Served on grilled sourdough</p>
+                            </th>
+                            <td>$5.95</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                            <td>$11.45</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- Sides Table -->
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Sides & Snacks</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                <label for="">French Fries</label>
+                            </th>
+                            <td>$3.00</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Onion Rings</label>
+                            </th>
+                            <td>$3.50</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Tempura Green Beans</label>
+                            </th>
+                            <td>$3.80</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Sweet Potato Fries</label>
+                            </th>
+                            <td>$3.50</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                      <!-- Drinks Table -->
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Drinks</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Coke</label>
+                            </th>
+                            <td>$2.50</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Diet Coke</label>
+                            </th>
+                            <td>$2.50</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Sprite</label>
+                            </th>
+                            <td>$2.50</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Root Beer</label>
+                            </th>
+                            <td>$2.50</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Lemonade</label>
+                            </th>
+                            <td>$2.50</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Golden Peak Iced Tea</label>
+                            </th>
+                            <td>$2.50</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                      <!-- Dessert Table -->
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Dessert</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                                <label for="">Chocolate Chunk Cookies</label>
+                            </th>
+                            <td>$1.75</td>
+                            <td><input type="number" min="0" placeholder="0"></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                      <!-- Price Table -->
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">Tax</th>
+                            <th scope="col">Grand Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="text" placeholder="Subtotal" disabled></td>
+                            <td><input type="text" placeholder="Taxes" disabled></td>
+                            <td><input type="text" placeholder="Total" disabled></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                       <!-- Where did you hear about the truck? -->
                       <div class="form-group">
-                        <label for="exampleFormControlSelect1">Example select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
+                        <label for="hearSelect">Where did you hear about the Habit Truck?</label>
+                        <select class="form-control" id="hearSelect">
+                          <option selected disabled>Please select</option>
+                          <option>I have booked the Habit Truck before</option>
+                          <option>I attended an event where the Truck was catering</option>
+                          <option>I was recommended by a Friend / Colleague</option>
+                          <option>I saw the Habit Truck on the road</option>
+                          <option>I picked up a flyer at the restaurant</option>
+                          <option>Newspaper</option>
+                          <option>Other</option>
                         </select>
                       </div>
+                      <!-- Comments -->
                       <div class="form-group">
-                        <label for="exampleFormControlSelect2">Example multiple select</label>
-                        <select multiple class="form-control" id="exampleFormControlSelect2">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
+                        <label for="commentsInput">Comments</label>
+                        <textarea class="form-control" id="commentsInput" rows="3"></textarea>
                       </div>
+                      <!-- Charclub -->
                       <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>   
-                       <!--examples  -->
+                        <label for="clubInput">Join the CharClub to receive Habit Burger news regarding 
+                            new products, new store openings, exclusive members only offers, and 
+                            special promotions.
+                        </label>
+                        <div class="col-1">
+                            <input type="checkbox" class="form-control" id="clubInput">
+                        </div> 
+                      </div>
+
+                      <p>
+                        By clicking 'Request Reservation' you are agreeing to our Terms and Conditions.
+                      </p>
+                      <p>
+                        You are entering a request for the specified date, this is not a guarantee or a 
+                        reservation. You will be contacted by a Habit Truck representative to complete 
+                        the reservation within 24 hours.
+                      </p>
+                      <p>
+                        Or give us a call:
+                        949.851.8881
+                      </p>
+                      <p>
+                        Or email us at:
+                        truck@habitburger.com
+                      </p>
+
+                      <button type="button" class="btn btn-primary">Request Reservation</button>
+                      
+
                 </form>
             </div>
           </div>
         </div>
       </div>
     
-    
-    
-    <!-- Truck Dimension -->
-    <div style="padding: 25px;">
-        <div class="panel-group">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapseDimension">Truck Dimensions</a>
-                </h4>
-              </div>
-              <div id="collapseDimension" class="panel-collapse collapse">
-                <ul class="list-group">
-                  <li class="list-group-item">33 ft. long</li>
-                  <li class="list-group-item">13 ft. high</li>
-                  <li class="list-group-item">8 ft. wide</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-    </div>
-    
-    
-      <!-- Truck Highlights -->
-      <div style="padding: 25px;">
-        <div class="panel-group">
-            <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                <a data-toggle="collapse" href="#collapseHighlights">Truck Highlights</a>
-                </h4>
-            </div>
-            <div id="collapseHighlights" class="panel-collapse collapse">
-                <ul class="list-group">
-                <li class="list-group-item">Perfect for events of all sizes</li>
-                <li class="list-group-item">Completely self-sufficient</li>
-                <li class="list-group-item">Truck can be booked for a food minimum of $1,700 plus tax.</li>
-                <li class="list-group-item">Charburger with cheese, French fries, and a beverage start at $11.45 per person, plus tax.</li>
-                <li class="list-group-item">The Food minimum feeds up to 148 guests.</li>
-                <li class="list-group-item">Upon booking we require a $500 deposit signed contract. The deposit will be applied to the overall cost of the event.</li>
-                <li class="list-group-item">Standard Service time is 1.5 hours and $175 for each additional 1/2 hour.</li>
-                <li class="list-group-item">Our Truck can accommodate 275 guests per hour (Charburger w/Cheese & Veggie Burger Combo Meals Only, without customizations).</li>
-                <li class="list-group-item">Suggested menu for 200 or more guests: Single Charburger w/Cheese & Veggie Burger Combo Meals.</li>
-                <li class="list-group-item">Habit Trucks will travel 1 hour and 60 miles roundtrip. Each additional 30 minutes of drive time is $150 and $2.75 per mile.</li>
-                <li class="list-group-item">The Truck will arrive 45 minutes before the scheduled service time to set up.</li>
-                <li class="list-group-item">Final payment is due 10 days before the event date.</li>
-                <li class="list-group-item">A $300 late night fee will apply to events scheduled between the hours of 9:00 pm – 11:59 pm.</li>
-                <li class="list-group-item">A $500 late night fee will apply to events scheduled between the hours of 12:00 am – 7:00 am.</li>
-                <li class="list-group-item">A $300 holiday fee will be applied to the following Holidays: New Year’s Day, Memorial Day, 4th of July, Labor Day, Halloween, Christmas Eve, New Year’s Eve.</li>
-                <li class="list-group-item">The Habit Truck will provide napkins, condiments, and trash cans. Tables and chairs for guests are not provided.</li>
-                <li class="list-group-item">The Habit Truck can provide business license permits, health department permits and certificates of insurance. Other permits, such as park permits, and entrance fees will need to be secured by the guest.</li>
-                <li class="list-group-item">A map and directions of how to get to your location and where the Truck will be parked is appreciated.</li>
-                <li class="list-group-item">Prices, terms, and conditions are subject to change.</li>
-                </ul>
-                <div class="panel-footer">We apologize, but we are unable to service Santa Barbara County. Advance reservations required. Terms & conditions apply.</div>
-            </div>
-            </div>
-        </div>
-      </div> 
 </div>
 
   
