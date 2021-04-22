@@ -5,7 +5,7 @@
 
 .col-sm {
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     text-align: center;
 }
@@ -42,7 +42,7 @@ h3 {
 
 h4 {
     position: absolute;
-    left: 280px;
+    left: 260px;
 }
 
 h5 {
