@@ -1,19 +1,15 @@
-.navbar {
+.container {
+    background-color: white;
+    padding: 20px;
+    overflow: inherit;
     position: relative;
-    z-index: 3;
 }
-  
 .topleft {
     position: absolute;
     top: 8px;
     left: 16px;
     font-size: 18px;
-}
-
-.container {
-    background-color: white;
-    padding: 20px;
-    overflow: inherit;
+    z-index: 3;
 }
 .title-menu, .title-category {
     color: #b4252d;
