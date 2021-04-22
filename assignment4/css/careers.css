@@ -47,7 +47,7 @@ section:before
 }
 ul li
 {
-    list-style: none;
+    list-style: square;
 }
 ul li a
 {
@@ -158,8 +158,9 @@ section .box {
     padding-top: 10% ;
 }
 
-#wtab .pane-description {
+.pane-description {
     font-size: 20px;
+    text-align: center;
 }
 
 #ctab .pane-image{
