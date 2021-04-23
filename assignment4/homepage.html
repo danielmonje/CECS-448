@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -17,56 +18,64 @@
 
 <body>
     <div class="container">
+        <div class="cart">
+            <i class="fa" style="font-size:30px">&#xf07a;</i>
+            <span class='badge badge-warning' id='lblCartCount'> 0 </span>
+        </div>
         <div class="topleft">
-            <img src="./images/logo-habit.jpg" alt="Habit Logo" style="width:100x;height:100px;">
+            <a href="homepage.html"><img src="./images/logo-habit.jpg" alt="Habit Logo" style="width:100x;height:100px;"></a>
         </div>
         <!----------------------------------------------Top Nav Bar --------------------------------------------------->
         <ul class="nav justify-content-center" id="top-nav">
-            <li class="nav-item"><a class="nav-link active" href="#menu">Menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#catering">Catering</a></li>
-            <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
-            <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+            <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+            <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
         </ul>
     </div>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <div style="padding: 25px;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="https://www.habitburger.com/wp-content/uploads/Habit-BrunchChar-2000x1239-1.jpg" )
-                    alt="Burger" usemap="#mapname">
-                <map name="mapname">
-                    <area shape="rect" coords="1639,926,1333,843" href="./order.html">
-                </map>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="./order.html"><img
+                            src="https://www.habitburger.com/wp-content/uploads/Habit-BrunchChar-2000x1239-1.jpg"
+                            alt="Burger"></a>
+                </div>
+
+                <div class="item">
+                    <a href="./order.html"><img
+                            src="https://www.habitburger.com/wp-content/uploads/Habit-CharsBites-2000x1239-1.jpg"
+                            alt="Bundles"></a>
+                </div>
+
+                <div class="item">
+                    <a href="./order.html"><img
+                            src="https://www.habitburger.com/wp-content/uploads/Habit-COVID19-2000x1239_v3.jpg"
+                            alt="Pickup"></a>
+                </div>
             </div>
 
-            <div class="item">
-                <img src="https://www.habitburger.com/wp-content/uploads/Habit-CharsBites-2000x1239-1.jpg"
-                    alt="Bundles">
-            </div>
-
-            <div class="item">
-                <img src="https://www.habitburger.com/wp-content/uploads/Habit-COVID19-2000x1239_v3.jpg" alt="Order">
-            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 
     <div class="site-info">
@@ -78,6 +87,11 @@
             <li><a href="https://www.youtube.com/channel/UCdRvFCIhwO3zi-yPT51IBhw" class="fa fa-lg fa-youtube"></a></li>
             <li><a href="https://www.snapchat.com/add/habitburger" class="fa fa-lg fa-snapchat"></a></li>
         </ul>
+        <a href="https://apps.apple.com/us/app/the-habit-burger-grill/id1398002552?ls=1"><img
+                src="./images/app_store_badge.png" alt="iOS App"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.habit.mobile"><img
+                src="./images/google_play_badge.png" alt="iOS App"></a>
     </div>
 </body>
+
 </html>
