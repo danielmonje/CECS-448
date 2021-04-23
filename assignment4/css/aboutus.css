@@ -2,12 +2,22 @@
     background-color: white;
     padding: 20px;
     overflow: inherit;
+    position: relative;
 }
 .title, .subtitle {
     color: #b4252d;
     line-height: 80%;
-    margin-left: 50px;
+    margin-left: 150px;
 }
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    z-index: 3;
+}
+
 .subtitle {
     font-size: 4em;
     font-weight: bolder;

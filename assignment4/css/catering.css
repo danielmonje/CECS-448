@@ -20,11 +20,13 @@ th{
     background-color: white;
     padding: 20px;
     overflow: inherit;
+    position: relative;
+    
 }
 .title, .subtitle {
     color: #b4252d;
     line-height: 80%;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 .subtitle {
     font-size: 4em;
@@ -84,4 +86,12 @@ th{
 .label-warning[href],
 .badge-warning[href] {
     background-color: #c67605;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    z-index: 3;
 }
