@@ -44,10 +44,6 @@ section:before
     font-size: 8em;
 }
 
-b {
-    color:#b4252d;
-}
-
 ul li
 {
     list-style: square;
@@ -192,4 +188,8 @@ font-size: 16px;
     justify-content: center;
     position: relative;
     background-repeat:no-repeat;
+}
+
+nav-link{
+    color:#b4252d;
 }
