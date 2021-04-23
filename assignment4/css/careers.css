@@ -29,10 +29,7 @@ h3 {
     color: #b4252d;
 }
 
-section:nth-child(odd) 
-{
-    background-color: #fff5e6;
-} 
+
 section:nth-child(even) 
 {
     background-repeat: no-repeat;
