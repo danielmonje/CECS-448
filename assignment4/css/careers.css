@@ -114,6 +114,14 @@ section .box {
     color: #000000;
 }
 
+label {
+    text-transform: uppercase;
+    line-height: 110%;
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #2A737E;
+}
+
 #who-we-are-link { background-color:  #c20d00; }
 #careers-path-link { background-color: #eb1000; }
 #faqs-link { background-color: #d92d21; }
