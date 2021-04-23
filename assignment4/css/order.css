@@ -1,4 +1,5 @@
 .topleft{
+    display: flex;
     position: absolute;
     padding-left: 400px;
     top: 5px;
