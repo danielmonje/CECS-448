@@ -35,3 +35,53 @@ th{
     font-size: small;
     width: 200px;
 }
+
+.site-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.site-info, .site-info ul, .site-info li {
+    margin: 0;
+    padding: 5px;
+}
+
+.site-info li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.site-info .fa {
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    padding-top: 12px;
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+
+.site-info .fa:hover {
+    color: #FFF;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.badge {
+    left: 100%;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+  
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
+}
