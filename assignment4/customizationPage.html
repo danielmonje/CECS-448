@@ -4,6 +4,8 @@
 <head>
     <title>Customize Burger</title>
     <!-- CSS only -->
+    <link href="css/homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="css/base.css" rel="stylesheet">
@@ -12,21 +14,21 @@
 </head>
 
 <body>
-<!--Nav bar goes here-->
-<div class="container">
-    <div class="topleft">
-        <img src="./images/logo-habit.jpg" alt="Habit Logo" style="width:100x;height:100px;">
+    <!--Nav bar goes here-->
+    <div class="container">
+        <div class="topleft">
+            <img src="./images/logo-habit.jpg" alt="Habit Logo" style="width:100x;height:100px;">
+        </div>
+        <!----------------------------------------------Top Nav Bar --------------------------------------------------->
+        <ul class="nav justify-content-center" id="top-nav">
+            <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+            <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+        </ul>
     </div>
-    <!----------------------------------------------Top Nav Bar --------------------------------------------------->
-    <ul class="nav justify-content-center" id="top-nav">
-        <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
-        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-        <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
-        <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
-        <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
-    </ul>
-</div>
     <div class="container">
         <div class="d-flex flex-column col-sm card">
             <div>
@@ -36,9 +38,13 @@
                 <img alt="Photo of #1 Original Charburger" id="pic" class="ProductCard_image__3o18D"
                     src="https://habit-images.s3.us-east-2.amazonaws.com/97559b71-b030-4627-9c65-331a733928ab@$1x">
                 <div>
-                    <h2>Original Charburger <span class="iconify" data-icon="noto-v1:peanuts" data-inline="false"></span></h2>
+                    <h2>Original Charburger <span class="iconify" data-icon="noto-v1:peanuts"
+                            data-inline="false"></span></h2>
                 </div>
-                <div class="d-flex flex-row price"><div class="price">Price: $8.60</div><div class="ml-auto calories">910-1114 Cal</div></div>
+                <div class="d-flex flex-row price">
+                    <div class="price">Price: $8.60</div>
+                    <div class="ml-auto calories">910-1114 Cal</div>
+                </div>
             </div>
             <!-- required dropdown and add ons -->
             <div class="d-flex flex-column required card">
@@ -155,7 +161,7 @@
                 <span class="iconify" id="info" data-icon="noto-v1:peanuts" data-inline="false"></span>
                 <h6>Please be advised that food prepared here may or may not contain nuts.</h6>
             </div>
-        
+
 
 
             <!-- testiong code -->
@@ -164,7 +170,20 @@
         </div>
     </div>
 
-
+    <div class="site-info">
+        Copyright 2021. The Habit Burger Grill. All Rights Reserved.
+        <ul>
+            <li><a href="https://www.facebook.com/habitburger" class="fa fa-lg fa-facebook"></a></li>
+            <li><a href="https://twitter.com/habitburger" class="fa fa-lg fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/habitburgergrill/#" class="fa fa-lg fa-instagram"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCdRvFCIhwO3zi-yPT51IBhw" class="fa fa-lg fa-youtube"></a></li>
+            <li><a href="https://www.snapchat.com/add/habitburger" class="fa fa-lg fa-snapchat"></a></li>
+        </ul>
+        <a href="https://apps.apple.com/us/app/the-habit-burger-grill/id1398002552?ls=1"><img
+                src="./images/app_store_badge.png" alt="iOS App"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.habit.mobile"><img
+                src="./images/google_play_badge.png" alt="iOS App"></a>
+    </div>
 
 
     <!-- JavaScript Bundle with Popper -->
