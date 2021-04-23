@@ -136,6 +136,10 @@ label {
     color: #b4252d;
 }
 
+#habit_top_part {
+    width: 1483px;
+}
+
 .pane-image {
     height: 550px;
     width: 550px;
@@ -156,6 +160,15 @@ label {
     background-image: url(../images/HabitBurgerDiff.jpg);
     background-size: cover;
     background-repeat:no-repeat;
+    background-color: white;
+    padding-top: 10% ;
+}
+
+#ctab .pane-image {
+    background-image: url(../images/HabitGetFiredUp.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 1000px;
     background-color: white;
     padding-top: 10% ;
 }
