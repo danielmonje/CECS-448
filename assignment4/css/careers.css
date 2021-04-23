@@ -9,11 +9,17 @@ body
 }
 section 
 {
-    height: 100vh;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items:center
-} 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 h2 {
     color: #b4252d;
@@ -39,6 +45,10 @@ section:before
     content: attr(data-text);
     color: #262626;
     font-size: 8em;
+}
+
+b {
+    color:#b4252d;
 }
 
 ul li
