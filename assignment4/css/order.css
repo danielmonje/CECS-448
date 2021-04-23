@@ -24,6 +24,11 @@
     right: 20px;
 }
 
+#charCustom {
+    align-self: center;
+    margin-bottom: 30px;
+}
+
 h1 {
     text-align: center;
 }
