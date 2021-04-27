@@ -1,8 +1,12 @@
 .topleft{
-    display: flex;
-    padding-left: 400px;
+    padding-left: 10px;
     top: 5px;
     font-size: 18px;
+}
+
+.justify-content-center {
+    margin-left: 110px;
+    padding: 10px;
 }
 
 .container {
